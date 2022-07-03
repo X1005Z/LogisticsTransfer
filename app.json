@@ -1,13 +1,45 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/coupon/coupon",
+    "pages/OrderInformation/OrderInformation",
+    "pages/my/my"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle":"black"
+    "navigationBarBackgroundColor": "#2ca7e6",
+    "navigationBarTitleText": "明德物流",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#2ca7e6",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/images/首页.png",
+        "selectedIconPath": "/assets/images/选中首页.png"
+      },
+      {
+        "pagePath": "pages/coupon/coupon",
+        "text": "优惠券",
+        "iconPath": "/assets/images/优惠券.png",
+        "selectedIconPath": "/assets/images/选中优惠券.png"
+      },
+      {
+        "pagePath": "pages/OrderInformation/OrderInformation",
+        "text": "订单信息",
+        "iconPath": "/assets/images/订单管理.png",
+        "selectedIconPath": "/assets/images/选中订单管理.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "/assets/images/我的.png",
+        "selectedIconPath": "/assets/images/选中我的.png"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

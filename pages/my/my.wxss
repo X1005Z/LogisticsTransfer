@@ -1,0 +1,11 @@
+.header {
+    background-color: #e7691d;
+    width: 750rpx;
+    height: 250rpx;
+}
+
+.header image {
+    width: 140rpx;
+    height: 140rpx;
+    border-radius: 50%;
+}

@@ -1,0 +1,22 @@
+.header {
+  background-color: #e7691d;
+  width: 750rpx;
+  height: 250rpx;
+}
+
+.middle {
+  margin-top: 60rpx;
+  margin-left: 42rpx;
+}
+
+.middleImage {
+  width: 666rpx;
+  height: 240rpx;
+  margin-bottom: 38rpx;
+}
+
+.middleImage1 {
+  width: 666rpx;
+  height: 228rpx;
+  margin-bottom: 38rpx;
+} 

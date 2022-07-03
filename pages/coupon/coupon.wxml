@@ -1,0 +1,11 @@
+<view>
+    <!-- 头部 -->
+    <view class="header"></view>    
+
+    <!-- 中间 -->
+    <view class="middle">
+        <image class="middleImage" src="../../assets/images/优惠券1.png"></image>
+        <image class="middleImage1" src="../../assets/images/优惠券2.png"></image>
+        <image class="middleImage1" src="../../assets/images/优惠券3.png"></image>
+    </view>
+</view>

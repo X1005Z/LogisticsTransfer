@@ -1,4 +1,4 @@
-// pages/OrderInformation/OrderInformation.js
+// pages/coupon/coupon.js
 Page({
 
   /**
