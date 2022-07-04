@@ -1,19 +1,296 @@
-/**index.wxss**/
-.userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #aaa;
+.container {
+    width: 750rpx;
+    height: 840rpx;
+    position: relative;
 }
 
-.userinfo-avatar {
+.containers {
+    position: absolute;
+    top: 0rpx;
+    right: 0rpx;
+    width: 750rpx;
+    height: 564rpx;
+    background-color: rgb(44, 167, 230);
+    overflow: hidden;
+}
+
+/* 半圆 */
+.semicircle {
+  position: absolute;
+  top: 340rpx;
+  left: 0rpx;
+  width: 750rpx;
+  height: 432rpx;
+  background-color: rgb(44, 167, 230);
+  border-radius: 90%;
   overflow: hidden;
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
 }
 
-.usermotto {
-  margin-top: 200px;
+/* 轮播图 */
+swiper {
+    position: absolute;
+    top: 70rpx;
+    left: 22rpx;
+    width: 708rpx;
+    height: 312rpx;
+    border-radius: 12rpx;
+}
+
+swiper image {
+    width: 100%;
+}
+
+/* 立即转运 */
+.transport {
+    position: absolute;
+    top: 452rpx;
+    left: 64rpx;
+    width: 624rpx;
+    height: 386rpx;
+    background-color: #fff;
+    border-radius: 28rpx;
+    box-shadow: 0px 6rpx 14rpx 4rpx rgba(0, 0, 0, 0.4);
+}
+
+.transport .text {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 122rpx;
+    left: 90rpx;
+    width: 448rpx;
+    height: 80rpx;
+}
+
+.transport .text .cityName {
+    width: 112rpx;
+    height: 80rpx;
+    font-size: 56rpx;
+    color: #101010;
+}
+
+.transport .text image {
+    width: 92rpx;
+    height: 92rpx;
+    position: absolute;
+    bottom: -6rpx;
+    left: 180rpx;
+}
+
+.transport button {
+    position: absolute;
+    top: 264rpx;
+    left: 140rpx;
+    background-color: rgb(44, 167, 230);
+    color: rgba(255, 255, 255, 100);
+    width: 324rpx;
+    height: 76rpx;
+}
+
+/* 人工客服 */
+.custom {
+    display: flex;
+    justify-content: space-between;
+    width: 714rpx;
+    height: 100rpx;
+    margin-top: 30rpx;
+    overflow: hidden;
+    background-color: #FF6600;
+    margin-left: 26rpx;
+    border-radius: 70rpx;
+    font-weight: 700;
+    color: #F7F6F6;
+}
+
+.custom .image1 image {
+    width: 108rpx;
+    height: 108rpx;
+    margin-left: -10rpx;
+}
+
+.custom .text {
+    margin-top: 10rpx;
+    margin-left: -250rpx;
+}
+
+.custom .image2 image {
+    width: 54rpx;
+    height: 54rpx;
+    margin-top: 24rpx;
+    margin-right: 30rpx;
+    /* background-color: rgba(247, 246, 246, 100); */
+}
+
+/* 转运须知 */
+.instructions {
+    display: flex;
+    justify-content: space-between;
+    width: 690rpx;
+    height: 324rpx;
+    margin-left: 28rpx;
+    margin-top: 26rpx;
+    margin-bottom: 50rpx;
+}
+
+.instructions .box {
+    width: 324rpx;
+    height: 324rpx;
+    border-radius: 28rpx;
+    box-shadow: 0px 3px 7px 2px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    padding-top: 30rpx;
+    padding-left: 30rpx;
+    font-weight: 700;
+}
+
+.instructions .transfer {
+    background-color: rgb(80, 184, 236);
+}
+
+.instructions .fare {
+    background-color: rgb(252, 157, 98);
+}
+
+.instructions .text {
+    font-size: 56rpx;
+}
+
+.instructions .transfer .text1 {
+    color: #F7F6F6;
+}
+
+.instructions .fare .text2 {
+    color: #E7691D;
+}
+
+.instructions .texts {
+    font-size: 28rpx;
+    margin-top: 14rpx;
+}
+
+.instructions .transfer .texts1 {
+    color: #F7F6F6;
+}
+
+.instructions .fare .texts2 {
+    color: #E7691D;
+}
+
+.instructions .rightArrow {
+    width: 58rpx;
+    height: 54rpx;
+    border-radius: 50%;
+    background-color: chartreuse;
+    margin-top: 54rpx;
+    margin-left: 20rpx;
+    box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.4);
+}
+
+.instructions .rightArrow .rightArrows {
+    width: 42rpx;
+    height: 42rpx;
+    margin-left: 12rpx;
+    margin-top: 6rpx;
+}
+
+.instructions .rightArrow1 {
+    background-color: rgb(44, 167, 230);
+}
+
+.instructions .rightArrow2 {
+    background-color: rgb(255, 98, 0);
+}
+
+.instructions .image1 {
+    width: 178rpx;
+    height: 178rpx;
+    margin-top: 10rpx;
+}
+
+.instructions .image2 {
+    width: 128rpx;
+    height: 128rpx;
+    margin-top: 26rpx;
+}
+
+/* 轻松转运 */
+.easyTransfer {
+    width: 750rpx;
+    height: 298rpx;
+}
+
+.easyTransfer .textUp {
+    font-size: 56rpx;
+    color: #000000;
+    font-weight: 700;
+    margin-left: 36rpx;
+}
+
+.easyTransfer .textUnder {
+    display: flex;
+    justify-content: space-between;
+    width: 750rpx;
+    height: 218rpx;
+    box-sizing: border-box;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    background-color: #fdfdfd;
+    margin-top: 10rpx;
+}
+
+.easyTransfer .textUnder .flowPath {
+    width: 100rpx;
+    height: 218rpx;
+    text-align: center;
+}
+
+.easyTransfer .textUnder .flowPath .flowImage {
+    margin-top: 6rpx;
+    width: 54rpx;
+    height: 54rpx;
+}
+
+.easyTransfer .textUnder .flowArrow {
+    width: 36rpx;
+    height: 36rpx;
+    margin-top: 100rpx;
+}
+
+.easyTransfer .textUnder .flowArrow image {
+    width: 36rpx;
+    height: 36rpx;
+}
+
+
+/* 复制仓库地址 */
+.warehouseAddress {
+    position: relative;
+    width: 660rpx;
+    height: 80rpx;
+    margin-top: 94rpx;
+    margin-left: 46rpx;
+    background-color: #2ca7e6;
+    border-radius: 38rpx;
+    line-height: 80rpx;
+}
+
+.warehouseAddress image {
+    width: 34rpx;
+    height: 34rpx;
+    margin-left: 144rpx;
+    margin-top: 26rpx;
+}
+
+.warehouseAddress text {
+    color: #FFFFFF;
+    margin-left: 20rpx;
+    position: absolute;
+}
+
+.warehouseAddress1 {
+    text-align: center;
+    margin-top: 12rpx;
+    font-size: 28rpx;
+    color: #2ca7e6;
+    padding-bottom: 50px;
 }
