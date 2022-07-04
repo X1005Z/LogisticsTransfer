@@ -1,3 +1,5 @@
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+
 .container {
     width: 750rpx;
     height: 840rpx;
@@ -87,6 +89,17 @@ swiper image {
     height: 76rpx;
 }
 
+/* 立即转运弹出层 */
+.pop {
+  position: absolute;
+  top: 100rpx;
+  left: 4rpx;
+  width: 620rpx;
+  height: 570rpx;
+  background-color: #fff;
+  border-radius: 4px 4px 4px 4px;
+}
+
 /* 人工客服 */
 .custom {
     display: flex;
@@ -109,7 +122,7 @@ swiper image {
 }
 
 .custom .text {
-    margin-top: 10rpx;
+    margin-top: 4rpx;
     margin-left: -250rpx;
 }
 
@@ -181,7 +194,7 @@ swiper image {
     height: 54rpx;
     border-radius: 50%;
     background-color: chartreuse;
-    margin-top: 54rpx;
+    margin-top: 50rpx;
     margin-left: 20rpx;
     box-shadow: 1px 3px 10px 1px rgba(0, 0, 0, 0.4);
 }
@@ -204,13 +217,13 @@ swiper image {
 .instructions .image1 {
     width: 178rpx;
     height: 178rpx;
-    margin-top: 10rpx;
+    margin-top: 0rpx;
 }
 
 .instructions .image2 {
     width: 128rpx;
     height: 128rpx;
-    margin-top: 26rpx;
+    margin-top: 14rpx;
 }
 
 /* 轻松转运 */
@@ -230,7 +243,7 @@ swiper image {
     display: flex;
     justify-content: space-between;
     width: 750rpx;
-    height: 218rpx;
+    height: 250rpx;
     box-sizing: border-box;
     padding-left: 10rpx;
     padding-right: 10rpx;
@@ -285,6 +298,8 @@ swiper image {
     color: #FFFFFF;
     margin-left: 20rpx;
     position: absolute;
+    top: 0rpx;
+    left: 180rpx;
 }
 
 .warehouseAddress1 {

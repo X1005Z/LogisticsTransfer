@@ -1,11 +1,149 @@
+/* 头部 */
 .header {
-    background-color: #e7691d;
-    width: 750rpx;
-    height: 250rpx;
+  background-color: #e7691d;
+  width: 750rpx;
+  height: 250rpx;
 }
 
 .header image {
-    width: 140rpx;
-    height: 140rpx;
-    border-radius: 50%;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+  margin-left: 48rpx;
+  margin-top: 41rpx;
+}
+
+.header .text {
+  position: absolute;
+  top: 46rpx;
+  left: 246rpx;
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.header .text .username {
+  font-size: 48rpx;
+}
+
+.header .text .encoded {
+  margin-top: 40rpx;
+}
+
+/* 我的订单 */
+.order {
+  width: 720rpx;
+  height: 264rpx;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 20rpx;
+  margin: 32rpx auto;
+}
+
+.order .orderUp {
+  width: 720rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: space-between;
+  color: #101010;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.order .orderUp .orderUpRight {
+  color: #999999;
+  margin-left: 370rpx;
+  font-size: 28rpx;
+}
+
+.order .orderUp image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.order .line {
+  width: 690rpx;
+  height: 2rpx;
+  border-top: 1px solid rgb(241, 241, 241);
+  margin: 0 auto;
+  margin-top: 30rpx;
+}
+
+.order .orderUnder {
+  display: flex;
+  justify-content: space-between;
+  width: 690rpx;
+  height: 138rpx;
+  overflow: hidden;
+  margin: 20rpx auto;
+}
+
+.order .orderUnder .box {
+  position: relative;
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+  text-align: center;
+}
+
+.order .orderUnder .box .image1 {
+  width: 54rpx;
+  height: 56rpx;
+}
+
+.order .orderUnder .box .image2 {
+  width: 22rpx;
+  height: 22rpx;
+  position: absolute;
+  right: 15rpx;
+}
+
+.order .orderUnder .box .boxText {
+  color: #1A1A1A;
+  font-size: 24rpx;
+}
+
+.order .orderUnder .lines {
+  color: #DFDFDF;
+  width: 2rpx;
+  height: 46rpx;
+  margin-top: 50rpx;
+  margin-left: 30rpx;
+}
+
+/* 关于我们 */
+.footer {
+  width: 720rpx;
+  height: 602rpx;
+  background-color: #fff;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.4);
+  border-radius: 22rpx;
+  margin: 0 auto;
+  margin-top: 50rpx;
+  box-sizing: border-box;
+}
+
+.footer .box {
+  display: flex;
+  justify-content: space-between;
+  width: 690rpx;
+  height: 82rpx;
+  line-height: 86rpx;
+  color: #101010;
+  border-bottom: 2rpx solid rgb(241, 241, 241);
+  margin: 0 auto;
+}
+
+.footer .box image {
+  width: 42rpx;
+  height: 42rpx;
+  margin-top: 24rpx;
+}
+
+.footer .line {
+  width: 690rpx;
+  height: 2rpx;
+  border-top: 1px solid rgb(241, 241, 241);
+  margin: 0 auto;
+  margin-top: 30rpx;
 }

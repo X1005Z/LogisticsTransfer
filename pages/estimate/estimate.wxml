@@ -1,0 +1,32 @@
+<view class="box">
+    <view class="image">
+      <image src="../../assets/images/运费估算.png"></image>
+    </view>
+
+    <!-- 预估运费 -->
+    <view>
+      <view class="boxText1">预估运费</view>
+      <view class="boxButton boxButtons">
+        <!-- 左边 -->
+        <view class="buttons left">
+          <view style="margin-bottom: 10rpx;">转运渠道</view>
+          <view>普通货物</view>
+        </view>
+        <!-- 右边 -->
+        <view class="buttons right">
+          <view style="margin-bottom: 10rpx;">预估重量</view>
+          <view>请输入重量</view>
+        </view>
+      </view>
+
+      <view class="boxButton" style="background-color: rgb(144, 174, 246); font-size: 28rpx;padding-top: 40rpx;box-sizing: border-box;">
+        <view style="margin-bottom: 10rpx;">预估体积</view>
+        <view>请输入长宽高</view>
+      </view>
+
+      <view class="boxButton" style="background-color: rgb(11, 115, 247); font-size: 32rpx; color: #fff; padding-top: 32rpx;box-sizing: border-box;">
+        <view style="margin-bottom: 10rpx;">预估运费（实际结果以订单为准）</view>
+        <view>￥ 0.00</view>
+      </view>
+    </view>
+</view>

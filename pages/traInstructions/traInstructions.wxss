@@ -1,0 +1,30 @@
+.box {
+  width: 694rpx;
+  height: 2856rpx;
+  margin: 34rpx auto;
+}
+
+.text1 {
+  color: #101010;
+  font-size: 48rpx;
+  font-weight: 700;
+}
+
+.text2 {
+  font-size: 34rpx;
+  margin: 30rpx 0;
+}
+
+.text3 {
+  text-align: right;
+  margin-right: 10rpx;
+  color: rgb(104, 104, 104);
+}
+
+button {
+  width: 374rpx;
+  height: 82rpx;
+  background-color: rgb(44, 167, 230);
+  color: #fff;
+  margin-top: 150rpx;
+}

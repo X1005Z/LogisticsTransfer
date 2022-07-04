@@ -3,7 +3,12 @@
     "pages/index/index",
     "pages/coupon/coupon",
     "pages/OrderInformation/OrderInformation",
-    "pages/my/my"
+    "pages/my/my",
+    "pages/copyAddress/copyAddress",
+    "pages/traInstructions/traInstructions",
+    "pages/estimate/estimate",
+    "pages/process/process",
+    "pages/myCoupon/myCoupon"
   ],
   "window":{
     "backgroundTextStyle":"light",

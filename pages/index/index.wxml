@@ -1,134 +1,152 @@
 <view style="background-color: #f7f6f6;">
-    <!-- 第一部分：轮播图、立即转运 -->
-    <view class="container">
-        <!-- 背景形状 -->
+  <!-- 第一部分：轮播图、立即转运 -->
+  <view class="container">
+    <!-- 背景形状 -->
+    <view>
+      <view class="containers"></view>
+      <!-- 半圆 -->
+      <view class="semicircle"></view>
+    </view>
+
+    <!-- 轮播图 -->
+    <swiper autoplay="true" interval="2000" circular="true" indicator-dots="true" indicator-color="white" indicator-active-color="#aabbcc">
+      <swiper-item>
+        <image mode="widthFix" src="../../assets/images/轮播图1.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image mode="widthFix" src="../../assets/images/轮播图2.jpg"></image>
+      </swiper-item>
+    </swiper>
+
+    <!-- 转运 -->
+    <view class="transport">
+      <view class="text">
+        <text class="cityName">中国</text>
+        <image mode="widthFix" src="../../assets/images/小飞机.png"></image>
+        <text class="cityName" bindtap="address">美国</text>
+      </view>
+      <button bindtap="pop">立即转运</button>
+      <!-- 弹出层 -->
+      <mp-dialog show="{{show}}" ext-class="pop" bindbuttontap="tapDialogButton" buttons="{{buttons}}" mask="true" mask-closable="true">
         <view>
-            <view class="containers"></view>
-            <!-- 半圆 -->
-            <view class="semicircle"></view>
+          普通货物
+          电子产品
+          液体粉末
+          内地EMS
+          广东EMS
         </view>
+      </mp-dialog>
 
-        <!-- 轮播图 -->
-        <swiper autoplay="true" interval="2000" circular="true" indicator-dots="true" indicator-color="white" indicator-active-color="#aabbcc">
-            <swiper-item>
-                <image mode="widthFix" src="../../assets/images/轮播图1.jpg"></image>
-            </swiper-item>
-            <swiper-item>
-                <image mode="widthFix" src="../../assets/images/轮播图2.jpg"></image>
-            </swiper-item>
-        </swiper>
-
-        <!-- 转运 -->
-        <view class="transport">
-            <view class="text">
-                <text class="cityName">中国</text>
-                <image mode="widthFix" src="../../assets/images/小飞机.png"></image>
-                <text class="cityName">美国</text>
-            </view>
-            <button>立即转运</button>
-        </view>
     </view>
+  </view>
 
-    <!-- 第二部分：联系客服 -->
-    <view class="custom">
-        <view class="image1">
-            <image src="../../assets/images/人工客服.png"></image>
-        </view>
-        <view class="text">
-            <text>联系客服</text>
-            <view style="color: #E2E2E2; font-size: 24rpx; margin-top: 10rpx;">为您解决下单疑问？</view>
-        </view>
-        <view class="image2">
-            <image src="../../assets/images/右箭头.png"></image>
-        </view>
+  <!-- 第二部分：联系客服 -->
+  <view class="custom">
+    <view class="image1">
+      <image src="../../assets/images/人工客服.png"></image>
     </view>
+    <view class="text">
+      <text>联系客服</text>
+      <view style="color: #E2E2E2; font-size: 24rpx; margin-top: 10rpx;">为您解决下单疑问？</view>
+    </view>
+    <view class="image2">
+      <image src="../../assets/images/右箭头.png"></image>
+    </view>
+  </view>
 
-    <!-- 第三部分：转运须知 -->
-    <view class="instructions">
-        <!-- 左边 -->
-        <view class="box transfer">
-            <text class="text text1">转运须知</text>
-            <view class="texts text1">流程和注意事项</view>
-            <view style="display: flex; justify-content: space-between;">
-                <view class="rightArrow rightArrow1">
-                    <image class="rightArrows rightArrows1" src="../../assets/images/右箭头.png"></image>
-                </view>
-                <view>
-                    <image class="image1" src="../../assets/images/小汽车.png"></image>
-                </view>
-            </view>
+  <!-- 第三部分：转运须知 -->
+  <view class="instructions">
+    <!-- 左边 -->
+    <navigator open-type="navigate" url="/pages/traInstructions/traInstructions">
+      <view class="box transfer">
+        <text class="text text1">转运须知</text>
+        <view class="texts text1">流程和注意事项</view>
+        <view style="display: flex; justify-content: space-between;">
+          <view class="rightArrow rightArrow1">
+            <image class="rightArrows rightArrows1" src="../../assets/images/右箭头.png"></image>
+          </view>
+          <view>
+            <image class="image1" src="../../assets/images/小汽车.png"></image>
+          </view>
         </view>
-        <!-- 右边 -->
-        <view class="box fare">
-            <text class="text text2">运费估算</text>
-            <view class="texts text2">费用心中有数</view>
-            <view style="display: flex; justify-content: space-between;">
-                <view class="rightArrow rightArrow2">
-                    <image class="rightArrows rightArrows2" src="../../assets/images/右箭头.png"></image>
-                </view>
-                <view>
-                    <image class="image2" src="../../assets/images/计算机.png"></image>
-                </view>
-            </view>
+      </view>
+    </navigator>
+
+    <!-- 右边 -->
+    <navigator open-type="navigate" url="/pages/estimate/estimate">
+      <view class="box fare">
+        <text class="text text2">运费估算</text>
+        <view class="texts text2">费用心中有数</view>
+        <view style="display: flex; justify-content: space-between;">
+          <view class="rightArrow rightArrow2">
+            <image class="rightArrows rightArrows2" src="../../assets/images/右箭头.png"></image>
+          </view>
+          <view>
+            <image class="image2" src="../../assets/images/计算机.png"></image>
+          </view>
         </view>
-    </view>
+      </view>
+    </navigator>
+  </view>
 
-    <!-- 第四部分：轻松转运 -->
-    <view class="easyTransfer">
-        <view class="textUp">轻松转运</view>
-        <view class="textUnder">
-            <!-- 购物 -->
-            <view class="flowPath">
-                <image class="flowImage" src="../../assets/images/购物车.png"></image>
-                <view style="font-size: 30rpx;margin-top: 6rpx;">购物</view>
-                <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">电商平台下单</view>
-            </view>
-            <view class="flowArrow">
-                <image src="../../assets/images/大右箭头.png"></image>
-            </view>
-            <!-- 预报 -->
-            <view class="flowPath">
-                <image class="flowImage" src="../../assets/images/预报.png"></image>
-                <view style="font-size: 30rpx;margin-top: 6rpx;">预报</view>
-                <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">填写寄送到仓的快递单号</view>
-            </view>
-            <view class="flowArrow">
-                <image src="../../assets/images/大右箭头.png"></image>
-            </view>
-            <!-- 合包 -->
-            <view class="flowPath">
-                <image class="flowImage" src="../../assets/images/合包.png"></image>
-                <view style="font-size: 30rpx;margin-top: 6rpx;">合包</view>
-                <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">将已到库提交合箱打包</view>
-            </view>
-            <view class="flowArrow">
-                <image src="../../assets/images/大右箭头.png"></image>
-            </view>
-            <!-- 支付 -->
-            <view class="flowPath">
-                <image class="flowImage" src="../../assets/images/支付.png"></image>
-                <view style="font-size: 30rpx;margin-top: 6rpx;">支付</view>
-                <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">核对打包详情并支付运费</view>
-            </view>
-            <view class="flowArrow">
-                <image src="../../assets/images/大右箭头.png"></image>
-            </view>
-            <!-- 收货 -->
-            <view class="flowPath">
-                <image class="flowImage" src="../../assets/images/收货.png"></image>
-                <view style="font-size: 30rpx;margin-top: 10rpx;">收货</view>
-                <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">留意包裹物流轨迹坐等收货</view>
-            </view>
-        </view>
-    </view>
 
-    <!-- 第五部分：复制地址 -->
-    <view class="warehouseAddress">
-        <image src="../../assets/images/复制图标.png"></image>
-        <text>复制仓库地址去购物</text>
+  <!-- 第四部分：轻松转运 -->
+  <view class="easyTransfer">
+    <view class="textUp">轻松转运</view>
+    <view class="textUnder">
+      <!-- 购物 -->
+      <view class="flowPath">
+        <image class="flowImage" src="../../assets/images/购物车.png"></image>
+        <view style="font-size: 30rpx;margin-top: 6rpx;">购物</view>
+        <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">电商平台下单</view>
+      </view>
+      <view class="flowArrow">
+        <image src="../../assets/images/大右箭头.png"></image>
+      </view>
+      <!-- 预报 -->
+      <view class="flowPath">
+        <image class="flowImage" src="../../assets/images/预报.png"></image>
+        <view style="font-size: 30rpx;margin-top: 6rpx;">预报</view>
+        <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">填写寄送到仓的快递单号</view>
+      </view>
+      <view class="flowArrow">
+        <image src="../../assets/images/大右箭头.png"></image>
+      </view>
+      <!-- 合包 -->
+      <view class="flowPath">
+        <image class="flowImage" src="../../assets/images/合包.png"></image>
+        <view style="font-size: 30rpx;margin-top: 6rpx;">合包</view>
+        <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">将已到库提交合箱打包</view>
+      </view>
+      <view class="flowArrow">
+        <image src="../../assets/images/大右箭头.png"></image>
+      </view>
+      <!-- 支付 -->
+      <view class="flowPath">
+        <image class="flowImage" src="../../assets/images/支付.png"></image>
+        <view style="font-size: 30rpx;margin-top: 6rpx;">支付</view>
+        <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">核对打包详情并支付运费</view>
+      </view>
+      <view class="flowArrow">
+        <image src="../../assets/images/大右箭头.png"></image>
+      </view>
+      <!-- 收货 -->
+      <view class="flowPath">
+        <image class="flowImage" src="../../assets/images/收货.png"></image>
+        <view style="font-size: 30rpx;margin-top: 10rpx;">收货</view>
+        <view style="font-size: 24rpx;color: #a4a4a4;margin-top: 10rpx;">留意包裹物流轨迹坐等收货</view>
+      </view>
     </view>
-    <view class="warehouseAddress1">
-        <text>电商平台的收货地址请填写我们</text>
-    </view>
+  </view>
 
+  <!-- 第五部分：复制地址 -->
+  <view class="warehouseAddress">
+    <image src="../../assets/images/复制图标.png"></image>
+    <navigator open-type="navigate" url="/pages/copyAddress/copyAddress">
+      <text>复制仓库地址去购物</text>
+    </navigator>
+  </view>
+  <view class="warehouseAddress1">
+    <text>电商平台的收货地址请填写我们</text>
+  </view>
 </view>

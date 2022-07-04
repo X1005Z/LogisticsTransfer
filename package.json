@@ -1,0 +1,25 @@
+{
+  "name": "220703-logisticstransfer",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/X1005Z/LogisticsTransfer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/X1005Z/LogisticsTransfer/issues"
+  },
+  "homepage": "https://github.com/X1005Z/LogisticsTransfer#readme",
+  "dependencies": {
+    "@miniprogram-component-plus/sticky": "^1.0.1",
+    "@miniprogram-component-plus/tabs": "^1.0.0",
+    "weui-miniprogram": "^1.2.3"
+  }
+}

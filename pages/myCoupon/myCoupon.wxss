@@ -1,0 +1,95 @@
+@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
+
+.box {
+  margin-top: 40rpx;
+}
+
+.coupon {
+  width: 700rpx;
+  height: 200rpx;
+  margin: 0 auto;
+  margin-bottom: 20rpx;
+}
+
+.couponLeft {
+  position: relative;
+}
+
+.couponLeft .text {
+  position: absolute;
+  bottom: 30rpx;
+  left: 45rpx;
+}
+
+.couponLeft image {
+  width: 268rpx;
+  height: 200rpx;
+}
+
+.couponRight {
+  position: relative;
+  width: 404rpx;
+  height: 200rpx;
+}
+
+.couponRight .righttext {
+  color: #5A5A5A;
+  font-size: 36rpx;
+  margin-top: 44rpx;
+  margin-bottom: 22rpx;
+  font-weight: 700;
+}
+
+.couponRight .righttext1 {
+  color: #BFBFBF;
+  font-size: 28rpx;
+}
+
+.couponRight .image1 {
+  position: absolute;
+  top: 0rpx;
+  right: 0rpx;
+  width: 126rpx;
+  height: 128rpx;
+}
+
+.couponRight .image2 {
+  position: absolute;
+  top: 6rpx;
+  right: 0rpx;
+  width: 90rpx;
+  height: 90rpx;
+}
+
+.couponRight .image3 {
+  position: absolute;
+  top: 36rpx;
+  right: 52rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.btn {
+  width: 352rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  background-color: rgb(11, 115, 247);
+  text-align: center;
+  color: #fff;
+  margin: 90rpx auto;
+  border-radius: 8rpx;
+}
+
+.exchange {
+  width: 504rpx;
+  height: 60rpx;
+  border: 1px solid rgba(187, 187, 187, 100);
+  margin: 0 auto;
+  font-size: 28rpx;
+  border-radius: 18rpx;
+}
+
+.exchange input {
+  height: 60rpx;
+  line-height: 60rpx;
+}

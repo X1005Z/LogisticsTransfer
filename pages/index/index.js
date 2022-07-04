@@ -1,66 +1,29 @@
-// pages/OrderInformation/OrderInformation.js
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    buttons: [{
+        text: '取消'
+      },
+      {
+        text: '下一步'
+      }
+    ],
+    show: false,
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad(options) {
-
+  // 修改地址
+  address: function() {
+    console.log(111);
+    
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady() {
-
+  // 立即转运弹出层
+  pop: function () {
+    console.log('1111');
+    this.setData ({
+      show: true,
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow() {
+  
 
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide() {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload() {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh() {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom() {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage() {
-
-  }
 })
