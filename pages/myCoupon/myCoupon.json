@@ -1,7 +1,5 @@
 {
-  "usingComponents": {
-    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
-  },
+  "usingComponents": {},
   "navigationBarTitleText": "我的优惠券",
   "navigationBarBackgroundColor": "#e7691d"
 }

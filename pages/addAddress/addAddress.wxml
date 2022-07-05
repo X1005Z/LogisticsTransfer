@@ -1,0 +1,33 @@
+<view class="addAddress">
+  <view class="box">
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    Name : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the recipient's name" />
+  </view>
+  <view class="box">
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    Phone : <input type="text" style="width: 500rpx;" placeholder-class="input-holder" placeholder="Please fill in the recipient‘s phone" />
+  </view>
+  <view class="box">
+    <text decode="{{true}}">&nbsp;&nbsp;</text>
+    Address : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the recipient's name" />
+  </view>
+  <view class="box">
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+    City : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the city" />
+  </view>
+  <view class="box">
+    PostCode : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the postcode" />
+  </view>
+  <view class="box">
+    <text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+    Country : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the postcode" />
+    <image class="image" src="../../assets/images/右箭头999.png"></image>
+  </view>
+
+  <!-- 横线 -->
+  <view class="line"></view>
+
+  <!-- 默认 -->
+  <view></view>
+  
+</view>

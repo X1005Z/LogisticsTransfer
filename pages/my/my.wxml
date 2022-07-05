@@ -57,20 +57,25 @@
 
   <!-- 关于我们 -->
   <view class="footer">
-    <view class="box">
-      <text>我的地址</text>
-      <image src="../../assets/images/右箭头999.png"></image>
-    </view>
+    <navigator open-type="navigate" url="/pages/myAddress/myAddress">
+      <view class="box">
+        <text>我的地址</text>
+        <image src="../../assets/images/右箭头999.png"></image>
+      </view>
+    </navigator>
     <navigator open-type="navigate" url="/pages/myCoupon/myCoupon">
       <view class="box">
         <text>我的优惠券</text>
         <image src="../../assets/images/右箭头999.png"></image>
       </view>
     </navigator>
-    <view class="box">
-      <text>活动中心</text>
-      <image src="../../assets/images/右箭头999.png"></image>
-    </view>
+    <navigator open-type="navigate" url="/pages/activeCenter/activeCenter">
+      <view class="box">
+        <text>活动中心</text>
+        <image src="../../assets/images/右箭头999.png"></image>
+      </view>
+    </navigator>
+
     <view class="box">
       <text>联系客服</text>
       <image src="../../assets/images/右箭头999.png"></image>

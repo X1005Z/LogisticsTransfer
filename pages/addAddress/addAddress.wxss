@@ -1,0 +1,35 @@
+.addAddress {
+  margin-top: 52rpx;
+}
+
+.box {
+  width: 700rpx;
+  height: 40rpx;
+  display: flex;
+  font-size: 28rpx;
+  margin-left: 50rpx;
+  margin-bottom: 50rpx;
+  font-weight: 600;
+}
+
+.box input {
+  width: 440rpx;
+  height: 40rpx;
+  margin-left: 40rpx;
+}
+
+.input-holder {
+  color: 28rpx;
+  font-weight: 400;
+}
+
+.image {
+  width: 42rpx;
+  height: 42rpx;
+}
+
+.line {
+  width: 748rpx;
+  height: 2rpx;
+  background-color: #BBBBBB;
+}

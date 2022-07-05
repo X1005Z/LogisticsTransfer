@@ -8,7 +8,14 @@
     "pages/traInstructions/traInstructions",
     "pages/estimate/estimate",
     "pages/process/process",
-    "pages/myCoupon/myCoupon"
+    "pages/myCoupon/myCoupon",
+    "pages/myAddress/myAddress",
+    "pages/addAddress/addAddress",
+    "pages/activeCenter/activeCenter",
+    "pages/orderDetails/orderDetails",
+    "pages/receiveCoupon/receiveCoupon",
+    "pages/fillAddress/fillAddress",
+    "pages/confirmPackage/confirmPackage"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -46,6 +53,5 @@
       }
     ]
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }

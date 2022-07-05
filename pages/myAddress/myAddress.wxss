@@ -1,0 +1,22 @@
+.addressImage {
+  width: 680rpx;
+  height: 646rpx;
+  margin: 0 auto;
+}
+
+.addressImage .addressImage1 {
+  width: 100%;
+  height: 100%;
+}
+
+.btn {
+  width: 352rpx;
+  height: 72rpx;
+  line-height: 72rpx;
+  background-color: rgb(231, 105, 29);
+  text-align: center;
+  color: #fff;
+  margin: 90rpx auto;
+  border-radius: 8rpx;
+}
+

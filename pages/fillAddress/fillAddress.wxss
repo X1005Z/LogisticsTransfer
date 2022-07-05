@@ -1,0 +1,134 @@
+/* 仓库信息 */
+.warehouse {
+  width: 694rpx;
+  height: 270rpx;
+  margin: 52rpx auto;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.warehouse .warehouseImage {
+  width: 52rpx;
+  height: 52rpx;
+  background-color: #2ca7e6;
+  border-radius: 50%;
+  padding-top: 6rpx;
+  box-sizing: border-box;
+  text-align: center;
+  margin-top: 22rpx;
+}
+
+.warehouse .warehouseImage image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.warehouse .text {
+  color: #101010;
+  margin-top: 28rpx;
+  margin-left: 20rpx;
+  font-weight: 700;
+}
+
+.warehouse .addressName {
+  width: 566rpx;
+  height: 160rpx;
+  margin-top: 16rpx;
+  margin-left: 94rpx;
+  font-size: 30rpx;
+}
+
+.warehouse .addressName view {
+  margin-bottom: 18rpx;
+}
+
+.warehouse .addressName .address {
+  color: #999999;
+  font-size: 24rpx;
+}
+
+.orderText2 {
+  width: 62rpx;
+  height: 28rpx;
+  color: #40B850;
+  font-size: 24rpx;
+  background-color: rgba(217, 241, 221, 100);
+  margin-left: 24rpx; 
+}
+
+/* 目标国信息 */
+.fremdness {
+  width: 694rpx;
+  height: 740rpx;
+  font-size: 28rpx;
+  margin: 0 auto;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+}
+
+.fremdness .fremdnessText1 {
+  padding-top: 54rpx;
+  margin-left: 112rpx;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.fremdness .fremdnessText2 {
+  margin-left: 112rpx;
+  padding-top: 16rpx; 
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34rpx;
+}
+
+.selectAddress {
+  width: 130rpx;
+  height: 46rpx;
+  line-height: 46rpx;
+  background-color: #D9F1DD;
+  color: #40B850;
+  font-size: 24rpx;
+  text-align: center;
+  border-radius: 8rpx;
+  margin-right: 42rpx;
+}
+
+.fremdness .fremdnessText2 .image {
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+
+.fremdness .fremdnessText3 {
+  width: 640rpx;
+  height: 344rpx;
+  margin: 0 auto;
+  font-size: 28rpx;
+}
+
+.fremdness .fremdnessText3 .fremdnessTextbox3 {
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.fremdness .fremdnessText3 .fremdnessTextbox3 .input {
+  width: 480rpx;
+  height: 40rpx;
+  margin-left: 16rpx;
+}
+
+.font {
+  font-size: 28rpx;
+}
+
+
+
+/* 立即转运按钮 */
+.btn {
+  margin: 102rpx auto;
+  width: 324rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  background-color: #2ca7e6;
+  color: #fff;
+  text-align: center;
+  border-radius: 8rpx;
+}

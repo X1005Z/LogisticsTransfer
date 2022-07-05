@@ -69,6 +69,90 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/address/address",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myaddress/myaddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/myaddress/myaddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/addAddress/addAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/activeCenter/activeCenter",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderDetails/orderDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderDetails/orderDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/receiveCoupon/receiveCoupon",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/fillAddress/fillAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderDetails/orderDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/confirmPackage/confirmPackage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/confirmPackage/confirmPackage",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

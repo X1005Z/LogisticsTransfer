@@ -1,0 +1,7 @@
+<view class="address">
+  <!-- 图片 -->
+  <view class="addressImage">
+    <image class="addressImage1" src="../../assets/images/活动中心.png"></image>
+  </view>
+  <view class="text">亲，暂时没有活动哦！~</view>
+</view>

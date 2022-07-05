@@ -1,0 +1,11 @@
+<view class="address">
+  <!-- 图片 -->
+  <view class="addressImage">
+    <image class="addressImage1" src="../../assets/images/我的地址.jpg"></image>
+  </view>
+
+  <!-- 添加地址按钮 -->
+  <navigator open-type="navigate" url="/pages/addAddress/addAddress">
+    <view class="btn">添加地址</view>
+  </navigator>
+</view>

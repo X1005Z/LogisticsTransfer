@@ -1,4 +1,3 @@
-@import "/miniprogram_npm/weui-miniprogram/weui-wxss/dist/style/weui.wxss";
 
 .box {
   margin-top: 40rpx;
@@ -69,6 +68,7 @@
   height: 160rpx;
 }
 
+/* 按钮 */
 .btn {
   width: 352rpx;
   height: 72rpx;
@@ -80,16 +80,79 @@
   border-radius: 8rpx;
 }
 
-.exchange {
-  width: 504rpx;
-  height: 60rpx;
-  border: 1px solid rgba(187, 187, 187, 100);
-  margin: 0 auto;
-  font-size: 28rpx;
-  border-radius: 18rpx;
+/* 弹出层 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
 }
 
-.exchange input {
+.modal-dialog {
+  width: 620rpx;
+  height: 318rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 76rpx;
+  border-radius: 16rpx;
+}
+
+.modal-title {
+  color: #000000;
+  font-size: 36rpx;
+  padding-top: 50rpx;
+  text-align: center;
+}
+
+.modal-input {
+  display: flex;
+  width: 504rpx;
   height: 60rpx;
-  line-height: 60rpx;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 18rpx;
+  font-size: 28rpx;
+  margin: 28rpx auto;
+}
+
+.input {
+  width: 100%;
+  height: 60rpx;
+  color: #333;
+  margin-left: 10rpx;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+}
+
+.btn-confirm {
+  width: 50%;
+  color: #ec5300;
+  text-align: center;
 }

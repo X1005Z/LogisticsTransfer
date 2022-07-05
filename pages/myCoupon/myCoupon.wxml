@@ -129,11 +129,20 @@
     </view>
   </view>
 
+  <!-- 兑换优惠券按钮 -->
   <view class="btn" bindtap="showDialog">兑换优惠券</view>
   <!-- 弹出层 -->
-  <mp-dialog show="{{show}}" title="兑换优惠券" buttons="{{buttons}}" mask="true" mask-closable="true"
-    bind:cancelEvent="_cancelEvent" bind:confirmEvent="_confirmEvent"
-  >
-    <view class="exchange"><input type="text" placeholder="请输入优惠卷code，进行兑换" /></view>
-  </mp-dialog>
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
+  <view class="modal-dialog" wx:if="{{show}}">
+    <view class="modal-title">兑换优惠券</view>
+    <view class="modal-content">
+      <view class="modal-input">
+        <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入优惠券code，进行兑换"></input>
+      </view>
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">领取</view>
+    </view>
+  </view>
 </view>

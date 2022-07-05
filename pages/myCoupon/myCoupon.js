@@ -1,34 +1,29 @@
 Page({
   data: {
-    buttons: [{
-        text: '取消'
-      },
-      {
-        text: '领取'
-      }
-    ],
     show: false,
   },
 
-  _cancelEvent(e) {
-    console.log('你点击了取消');
-    this.setData({
-      show: false
-    })
-  },
-
-  _confirmEvent(e) {
-    console.log('你点击了领取');
+  // 弹出层
+  showDialog: function () {
     this.setData({
       show: true
     })
   },
 
-  // 弹出层
-  showDialog: function () {
-    console.log('1111');
-    this.setData ({
-      show: true,
-    })
+  // 隐藏弹出层
+  hideModal: function () {
+    this.setData({
+      show: false
+    });
   },
+
+  // 点击取消按钮事件，关闭弹出层
+  onCancel: function () {
+    this.hideModal();
+  },
+
+  // 点击领取按钮，关闭弹出层
+  onConfirm: function () {
+    this.hideModal();
+  }
 })

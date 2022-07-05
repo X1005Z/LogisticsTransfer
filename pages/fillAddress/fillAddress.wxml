@@ -1,0 +1,61 @@
+<view class="fillAddress">
+  <!-- 仓库信息 -->
+  <view class="warehouse">
+    <view style="display: flex; margin-left: 50rpx;">
+      <view class="warehouseImage">
+        <image src="../../assets/images/小灯泡.png"></image>
+      </view>
+      <text class="text">仓库地址</text>
+    </view>
+    <view class="addressName">
+      <view>
+        {{name}}<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{phone}}
+        <text class="orderText2" data-item='{{name}} {{phone}}, {{address}}' bindtap="copy">复制</text>
+      </view>
+      <view class="address">{{address}}</view>
+    </view>
+  </view>
+
+  <!-- 目标国收件信息 -->
+  <view class="fremdness">
+    <view class="fremdnessText1">目标国收件信息</view>
+    <view class="fremdnessText2">
+      <view style="display: flex;align-items: center;">
+        <image class="image" src="../../assets/images/红色感叹号.png"></image>
+        <text style="color: #E7691D">请用英文填写</text>
+      </view>
+      <view class="selectAddress">选择地址</view>
+    </view>
+    <view class="fremdnessText3">
+      <view class="fremdnessTextbox3">
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        Name：
+        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the recipient‘s name" />
+      </view>
+      <view class="fremdnessTextbox3">
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        Phone：
+        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the recipient‘s phone" />
+      </view>
+      <view class="fremdnessTextbox3">
+        <text decode="{{true}}">&nbsp;&nbsp;</text>
+        Address：
+        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the address" />
+      </view>
+      <view class="fremdnessTextbox3">
+        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+        City：
+        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the city" />
+      </view>
+      <view class="fremdnessTextbox3">
+        PostCode：
+        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the postcode" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 立即转运按钮 -->
+  <navigator open-type="navigate" url="/pages/traInstructions/traInstructions">
+    <view class="btn">立即转运</view>
+  </navigator>
+</view>
