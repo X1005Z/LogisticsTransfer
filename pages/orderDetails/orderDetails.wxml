@@ -62,8 +62,10 @@
 
   <!-- 按钮 -->
   <view class="btnUnder">
-    <view class="btn btn1">联系客服</view>
     <view class="btn btn2" bindtap="showDialog">取消订单</view>
+    <navigator open-type="navigate" url="/pages/confirmPackage/confirmPackage">
+      <view class="btn btn1">打包</view>    
+    </navigator>
 
     <!-- 取消订单弹出层 -->
     <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>

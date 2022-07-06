@@ -54,39 +54,23 @@
     <view class="upBox">
       <view class="upBox1">
         <text class="upBoxText">1.</text>
-        <input type="text" class="input" placeholder="136765432546576435341" />
-        <view class="upBoxText1">待入仓</view>
+        <input type="text" class="input" placeholder="2452435334" />
+        <view class="upBoxText1">已入库</view>
       </view>
       <view class="upBox1">
         <text class="upBoxText">2.</text>
-        <input type="text" class="input" placeholder="1322314325446455341" />
+        <input type="text" class="input" placeholder="1231242342" />
         <view class="upBoxText1">已入库</view>
       </view>
       <view class="upBox1">
         <text class="upBoxText">3.</text>
-        <input type="text" class="input" placeholder="435344546541" />
+        <input type="text" class="input" placeholder="1213423425" />
         <view class="upBoxText1">已入库</view>
       </view>
       <view class="upBox1">
         <text class="upBoxText">4.</text>
-        <input type="text" class="input" placeholder="547134325465342342" />
+        <input type="text" class="input" placeholder="24234315431" />
         <view class="upBoxText1">已入库</view>
-      </view>
-    </view>
-    <!-- 补充快递单号 -->
-    <view>
-      <view class="addbtn" bindtap="showDialogs">+ 补充快递单号</view>
-      <!-- 补充快递单号弹出层 -->
-      <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{shows}}"></view>
-      <view class="modal-dialog" wx:if="{{shows}}">
-        <view class="modal-title">是否增加快递单号？</view>
-        <view class="modal-content">
-          增加快递单号后，发往转运中心的快递个数+1，是否要继续？
-        </view>
-        <view class="modal-footer">
-          <view class="btn-cancel" bindtap="onCancels" data-status="cancel">取消</view>
-          <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirms" data-status="confirm">确认</view>
-        </view>
       </view>
     </view>
   </view>
@@ -100,27 +84,13 @@
       </view>
       <view>转运线路：中国 - 美国</view>
       <view>预选渠道：普通货物</view>
-      <view>订单状态：<text style="color: #ffd929">待入仓</text></view>
+      <view>订单状态：<text style="color: #ffd929">待拣货</text></view>
       <view>下单时间：2022-05-09 14:07:12</view>
     </view>
   </view>
 
   <!-- 按钮 -->
   <view class="btnUnder">
-    <view class="btn btn1">联系客服</view>
-    <view class="btn btn2" bindtap="showDialog">确认打包</view>
-
-    <!-- 取消订单弹出层 -->
-    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
-    <view class="modal-dialog" wx:if="{{show}}">
-      <view class="modal-title">是否确认打包所有的快递包裹</view>
-      <view class="modal-content">
-        确认后，订单进入捡货状态，快递包裹将会进行打包称重，是否要继续
-      </view>
-      <view class="modal-footer">
-        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
-        <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认</view>
-      </view>
-    </view>
+    <view class="btn" bindtap="topay">去支付</view>
   </view>
 </view>

@@ -1,0 +1,36 @@
+.payCompletedUp {
+  margin-top: 364rpx;
+  margin-left: 304rpx;
+}
+
+.payCompletedUp image {
+  width: 142rpx;
+  height: 140rpx;
+}
+
+.payCompletedUp-text {
+  margin-top: 16rpx;
+  margin-bottom: 90rpx;
+  font-size: 40rpx;
+  text-align: center;
+  color: #06a103;
+}
+
+.payCompletedUp-text1 {
+  color: #101010;
+  font-size: 28rpx;
+  margin-left: 78rpx;
+  line-height: 50rpx;
+}
+
+.payCompletedUp-button {
+  width: 378rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  color: #06A103;
+  border: 2rpx solid #06A103;
+  text-align: center;
+  margin-top: 152rpx;
+  margin-left: 186rpx;
+  background-color: #fff;
+}

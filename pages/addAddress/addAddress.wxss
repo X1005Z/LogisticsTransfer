@@ -33,3 +33,46 @@
   height: 2rpx;
   background-color: #BBBBBB;
 }
+
+.insureUpText2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 660rpx;
+  height: 50rpx;
+  margin-top: 26rpx;
+  margin-left: 46rpx;
+  font-size: 28rpx;
+}
+
+/* search的样式 */
+.wx-switch-input {
+  width: 100rpx !important;
+  height: 60rpx !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} 
+
+/*白色样式（false的样式）*/
+.wx-switch-input::before {
+  width: 95rpx !important;
+  height: 56rpx !important;
+}
+
+/*绿色样式（true的样式）*/
+.wx-switch-input::after {
+  width: 61rpx !important;
+  height: 56rpx !important;
+}
+
+.btn {
+  width: 450rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  background-color: #E7691D;
+  text-align: center;
+  color: #fff;
+  margin-top: 100rpx;
+  margin-left: 150rpx;
+  font-size: 28rpx;
+}

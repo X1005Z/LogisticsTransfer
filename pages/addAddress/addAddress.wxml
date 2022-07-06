@@ -27,7 +27,10 @@
   <!-- 横线 -->
   <view class="line"></view>
 
-  <!-- 默认 -->
-  <view></view>
-  
+  <view class="insureUpText2">
+    <view style="margin-left: 10rpx;">设为默认</view>
+    <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+  </view>
+
+  <view class="btn">添加地址</view>
 </view>

@@ -15,7 +15,7 @@
         <view>{{zipcode}}</view>
       </view>
     </view>
-    <view class="copyWare" bindtap="copyAddress" data-item="{{text1}},{{address1}}{{address2}},{{phone}},{{zipcode}}">一键复制仓库地址信息</view>
+    <view class="copyWare" bindtap="copyAddress" data-item="{{name}},{{address1}}{{address2}},{{phone}},{{zipcode}}">一键复制仓库地址信息</view>
   </view>
 
   <!-- 打包流程 -->

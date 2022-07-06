@@ -1,0 +1,215 @@
+.insure {
+  margin-top: 42rpx;
+}
+
+.insure .insureUp {
+  width: 694rpx;
+  height: 296rpx;
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  margin-bottom: 50rpx;
+}
+
+/* 保价 */
+.insure .insureUp1 {
+  padding-left: 38rpx;
+  padding-top: 32rpx;
+  box-sizing: border-box;
+}
+
+.insure .insureUp1 .insureUpText1 {
+  margin-bottom: 24rpx;
+}
+
+.insure .insureUp1 .insureUpImage1 {
+  display: flex;
+  align-items: center;
+}
+
+.insure .insureUp1 .insureUpImage1 image {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 20rpx;
+}
+
+.insure .insureUp1 .insureUpImage1 .insureUpImageText1 {
+  font-size: 36rpx;
+  font-weight: 700;
+}
+
+.insure .insureUp1 .insureInput {
+  width: 568rpx;
+  height: 68rpx;
+  border: 2rpx solid #BBBBBB;
+  border-radius: 22rpx;
+  font-size: 28rpx;
+  padding-left: 20rpx;
+  margin-top: 28rpx;
+  margin-left: 36rpx;
+  box-sizing: border-box;
+}
+
+/* 丢失险 */
+.insure .insureUp2 {
+  padding-left: 26rpx;
+  padding-top: 26rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+
+.insureUpImage2 {
+  display: flex;
+  margin-bottom: 36rpx;
+}
+
+.insureUpImage2 image {
+  width: 28rpx;
+  height: 28rpx;
+}
+
+.insureUpImageText2 {
+  color: #EC0606;
+  font-size: 22rpx;
+  margin-left: 10rpx;
+}
+
+.insureUpText2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 588rpx;
+  height: 50rpx;
+}
+
+/* search的样式 */
+.wx-switch-input {
+  width: 84rpx !important;
+  height: 50rpx !important;
+  margin: 0 !important;
+  padding: 0 !important;
+} 
+
+/*白色样式（false的样式）*/
+.wx-switch-input::before {
+  width: 79rpx !important;
+  height: 46rpx !important;
+}
+
+/*绿色样式（true的样式）*/
+.wx-switch-input::after {
+  width: 45rpx !important;
+  height: 46rpx !important;
+}
+
+.line {
+  width: 618rpx;
+  border-bottom: 2rpx solid #BBBBBB;
+  margin: 22rpx 0;
+  margin-left: 10rpx;
+}
+
+/* 关税险 */
+.insure .insureUnder {
+  width: 694rpx;
+  height: 370rpx;
+}
+
+/* 按钮 */
+.btnUnder {
+  display: flex;
+  margin-top: 116rpx;
+}
+
+.btn {
+  width: 376rpx;
+  height: 114rpx;
+  line-height: 114rpx;
+  text-align: center;
+  font-size: 36rpx;
+}
+
+.btn1 {
+  background-color: #2ca7e6;
+  color: #fff;
+}
+
+.btn2 {
+  background-color: #274F05;
+  color: #F5E4AD;
+}
+
+/* 弹出层 */
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 632rpx;
+  height: 446rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 60rpx;
+  border-radius: 16rpx;
+}
+
+.modal-title {
+  color: #000000;
+  font-size: 36rpx;
+  padding-top: 20rpx;
+  font-size: 36rpx;
+  margin-bottom: 2rpx;
+  text-align: center;
+}
+
+.modal-content {
+  color: #000000;
+  font-size: 28rpx;
+  width: 616rpx;
+  height: 240rpx;
+  line-height: 46rpx;
+  margin-left: 10rpx;
+  margin-bottom: 42rpx;
+  font-weight: 700;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btns {
+  width: 236rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+}
+
+.btn-cancel {
+  margin-left: 32rpx;
+  background-color: #274F05;
+  color: #FFD700;
+}
+
+.btn-confirm {
+  color: #fff;
+  background-color: #2ca7e6;
+  margin-left: 96rpx;
+}

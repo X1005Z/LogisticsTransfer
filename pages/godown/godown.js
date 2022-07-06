@@ -1,4 +1,4 @@
-// pages/addAddress/addAddress.js
+// pages/godown/godown.js
 Page({
 
   /**

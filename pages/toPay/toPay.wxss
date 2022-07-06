@@ -2,9 +2,9 @@
   width: 750rpx;
   height: 70rpx;
   line-height: 70rpx;
-  background-color: #64c0ee;
-  border-top: 2rpx solid #2ca7e6;
-  border-bottom: 2rpx solid #2ca7e6;
+  background-color: #fde5d2;
+  border-top: 2rpx solid #E7691D;
+  border-bottom: 2rpx solid #E7691D;
   font-size: 28rpx;
   padding-left: 22rpx;
   box-sizing: border-box;
@@ -61,12 +61,76 @@
 }
 
 .warehouseImage2 {
-  background-color: #2ca7e6;
+  background-color: #FFA726;
 }
 
 .warehouseImage image {
   width: 40rpx;
   height: 40rpx;
+}
+
+/* 订单详情 */
+.fare {
+  width: 694rpx;
+  height: 1478rpx;
+  background-color: rgba(255, 255, 255, 79);
+  box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  font-size: 28rpx;
+  color: #101010;
+  padding-left: 28rpx;
+  padding-right: 28rpx;
+  padding-top: 46rpx;
+  box-sizing: border-box;
+}
+
+.fare-text {
+  margin-bottom: 22rpx;
+}
+
+.fare-image {
+  width: 590rpx;
+  height: 164rpx;
+}
+
+.fare-image image {
+  width: 186rpx;
+  height: 164rpx;
+  margin-right: 16rpx;
+}
+
+.fare-wrap {
+  display: flex;
+  width:638rpx;
+  height: 240rpx;
+  padding-left: 20rpx;
+  margin-bottom: 28rpx;
+  border: 2rpx solid #bebebe;
+  border-radius: 6rpx;
+  box-sizing: border-box;
+}
+
+.fare-wrap .fare-wrapLeft {
+  width: 192rpx;
+  height: 186rpx;
+  margin-right: 26rpx;
+  margin-top: 28rpx;
+}
+
+.fare-wrap .fare-wrapLeft image {
+  width: 100%;
+  height: 100%;
+}
+
+.fare-wrap .fare-wrapRight {
+  width: 336rpx;
+  height: 200rpx;
+  margin-top: 22rpx;
+}
+
+.fare-wrap .fare-wrapRight .fare-wrapRightText2 {
+  font-size: 24rpx;
+  color: #8a858e;
 }
 
 /* 快递个数 */
@@ -108,7 +172,7 @@
 
 .middleText text:nth-child(2) {
   margin-left: 8rpx;
-  color: #2ca7e6;
+  color: #E7691D;
   font-weight: 700;
 } 
 
@@ -181,15 +245,16 @@
   height: 32rpx;
   line-height: 32rpx;
   font-size: 20rpx;
-  background-color: #64c0ee;
-  color: #0287ca;
+  background-color: #FDE5D2;
+  color: #E7691D;
   text-align: center;
   border-radius: 8rpx;
 }
 
+/* 订单详情 */
 .orderUnder {
   width: 694rpx;
-  height: 344rpx;
+  height: 450rpx;
   margin: 40rpx auto;
   padding: 20rpx 0;
   box-sizing: border-box;
@@ -206,20 +271,6 @@
   color: #101010;
 }
 
-/* 补充快递单号 */
-.addbtn {
-  width: 222rpx;
-  height: 52rpx;
-  line-height: 52rpx;
-  border: 1px solid rgba(64, 184, 80, 100);
-  border-radius: 22rpx;
-  color: rgba(64, 184, 80, 100);
-  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.4);
-  font-size: 24rpx;
-  text-align: center;
-  margin-top: 16rpx;
-  margin-left: 400rpx;
-}
 
 /* 按钮 */
 .btnUnder {
@@ -238,7 +289,7 @@
 }
 
 .btn1 {
-  background-color: #2ca7e6;
+  background-color: #E7691D;
   color: #fff;
 }
 
@@ -262,15 +313,15 @@
 }
 
 .modal-dialog {
-  width: 560rpx;
-  height: 292rpx;
+  width: 632rpx;
+  height: 364rpx;
   overflow: hidden;
   position: fixed;
   top: 50%;
   left: 0;
   z-index: 9999;
   background: #f9f9f9;
-  margin: -180rpx 106rpx;
+  margin: -180rpx 60rpx;
   border-radius: 16rpx;
 }
 
@@ -286,11 +337,38 @@
 .modal-content {
   color: #888888;
   font-size: 26rpx;
-  width: 442rpx;
-  height: 72rpx;
-  text-align: center;
-  margin-left: 66rpx;
+  width: 520rpx;
+  height: 142rpx;
+  margin-left: 22rpx;
   margin-bottom: 30rpx;
+}
+
+.modal-content .modal-warehouse {
+  display: flex;
+  align-items: center;
+}
+
+.modal-warehouseImage {
+  width: 52rpx;
+  height: 52rpx;
+  line-height: 60rpx;
+  border-radius: 50%;
+  background-color: #ffa726;
+  text-align: center;
+}
+
+.modal-warehouseImage image {
+  width: 34rpx;
+  height: 34rpx;
+}
+
+.modal-warehouseText {
+  width: 434rpx;
+  height: 142rpx;
+  margin-left: 34rpx;
+  padding-top: 16rpx;
+  color: #101010;
+  box-sizing: border-box;
 }
 
 .modal-footer {
@@ -299,6 +377,7 @@
   height: 86rpx;
   font-size: 34rpx;
   line-height: 86rpx;
+  font-weight: 700;
 }
 
 .btn-cancel {
@@ -312,3 +391,4 @@
   color: #ec5300;
   text-align: center;
 }
+

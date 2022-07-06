@@ -15,7 +15,15 @@
     "pages/orderDetails/orderDetails",
     "pages/receiveCoupon/receiveCoupon",
     "pages/fillAddress/fillAddress",
-    "pages/confirmPackage/confirmPackage"
+    "pages/confirmPackage/confirmPackage",
+    "pages/picked/picked",
+    "pages/toPay/toPay",
+    "pages/insure/insure",
+    "pages/paymentDetails/paymentDetails",
+    "pages/payCompleted/payCompleted",
+    "pages/accomplish/accomplish",
+    "pages/godown/godown",
+    "pages/mysAddress/mysAddress"
   ],
   "window":{
     "backgroundTextStyle":"light",

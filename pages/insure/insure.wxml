@@ -1,0 +1,72 @@
+<view class="insure">
+  <!-- 保价 -->
+  <view class="insureUp insureUp1">
+    <view class="insureUpText1">订单号：20220509140712345678</view>
+    <view class="insureUpImage1">
+      <image src="../../assets/images/保价图标.png"></image>
+      <view class="insureUpImageText1">保价</view>
+    </view>
+    <input class="insureInput" type="text" placeholder="自定义物品价格，请填写真实物品价格" />
+  </view>
+
+  <!-- 丢失险 -->
+  <view class="insureUp insureUp2">
+    <view class="insureUpImage2">
+      <image src="../../assets/images/红色感叹号.png"></image>
+      <view class="insureUpImageText2">
+        <view>国际快递由于多国调度，存在一定比例丢失的情况！</view>
+        <view>如丢失包裹，购买丢失险可获得全额赔付赔付(最高5000元)!</view>
+      </view>
+    </view>
+    <view class="insureUpText2">
+      <view style="margin-left: 10rpx;">丢失险（保价的3%）</view>
+      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+    </view>
+    <view class="line"></view>
+    <view style="margin-left: 10rpx;">保险费：￥30.00</view>
+  </view>
+
+  <!-- 关税险 -->
+  <view class="insureUp insureUp2 insureUnder">
+    <view class="insureUpImage2" style="display: flex;">
+      <image style="width: 28rpx; height: 28rpx;" src="../../assets/images/红色感叹号.png"></image>
+      <view class="insureUpImageText2" style="width: 560rpx;">
+        <view>电子产品等容易被税的高客单价产品建议购买关税保险!</view>
+        <view>英国关税起征点为0.01英镑!</view>
+        <view>综合关税=货值x增值税率+(货值+运费+货值x产品税率)x20%+清关杂费。</view>
+      </view>
+    </view>
+    <view class="insureUpText2">
+      <view style="margin-left: 10rpx;">关税险（保价的2%）</view>
+      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+    </view>
+    <view class="line"></view>
+    <view style="margin-left: 10rpx;">保险费：￥20.00</view>
+  </view>
+
+  <!-- 按钮 -->
+  <view class="btnUnder">
+    <view class="btn btn1">联系客服</view>
+    <view class="btn btn2" bindtap="showDialog">下一步</view>
+
+    <!-- 取消订单弹出层 -->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
+    <view class="modal-dialog" wx:if="{{show}}">
+      <view class="modal-title">风险告知书</view>
+      <view class="modal-content">
+        尊敬的客户:
+        <view>
+          <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+          您好，系统识别到您的订单未投保丢失保险，
+          丢件的概率为万分之三，未购买丢失保险发生丢
+          失的赔付原则为:退运费，按照实际货值赔付但不
+          超过运费价值且最高不超过100美元。请悉知。
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btns btn-cancel" bindtap="onCancel" data-status="cancel">购买保险</view>
+        <view class="btns btn-confirm" bindtap="onConfirm" data-status="confirm">承担风险</view>
+      </view>
+    </view>
+  </view>
+</view>

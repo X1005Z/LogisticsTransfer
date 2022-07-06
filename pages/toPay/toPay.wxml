@@ -1,0 +1,176 @@
+<view class="orderDetail">
+  <view class="orderDetailText">
+    转运账单已生成，请及时查看账单信息并支付
+  </view>
+  <!-- 收货信息 -->
+  <view class="orderUp">
+    <!-- 仓库信息 -->
+    <view class="warehouse">
+      <view class="warehouseImage warehouseImage1">
+        <image src="../../assets/images/小灯泡.png"></image>
+      </view>
+      <view class="warehouseText">
+        <view class="warehouseText1">
+          <text style="margin-right: 20rpx;">{{name}}</text>
+          <text>{{phone}}</text>
+          <text class="orderText2" data-item='{{name}},{{phone}},{{address}}' bindtap="copy">复制</text>
+          <view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">{{address}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 收货人信息 -->
+    <view class="warehouse">
+      <view class="warehouseImage warehouseImage2">
+        <image src="../../assets/images/小房子.png"></image>
+      </view>
+      <view class="warehouseText">
+        <view class="warehouseText1">
+          <text style="margin-right: 20rpx;">KK Zheng</text>
+          <text>18688880130</text>
+          <view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A TUCSON, AZ 85705 USA</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 运费详情 -->
+  <view class="fare">
+    <view class="fare-text">运费：￥138.00</view>
+    <view class="fare-text">附加费：￥0.00</view>
+    <view class="fare-text">称重重量：5.6kg</view>
+    <view class="fare-text">分拣备注：<text style="color: #e76932;">已拆封分拣，统一归类</text></view>
+    <view class="fare-text">打包备注：<text style="color: #e76932;">东西太多，已统一打包加固</text></view>
+    <view class="fare-text" style="margin-bottom: 10rpx;">称重图片：</view>
+    <view class="fare-text fare-image">
+      <image src="../../assets/images/称重图.png"></image>
+      <image src="../../assets/images/称重图.png"></image>
+      <image style="margin-right: 0rpx;" src="../../assets/images/称重图.png"></image>
+    </view>
+    <view class="fare-text" style="margin-bottom: 10rpx;">账单：</view>
+    <view class="fare-wrap">
+      <view class="fare-wrapLeft">
+        <image src="../../assets/images/称重图2.png"></image>
+      </view>
+      <view class="fare-wrapRight">
+        <view class="fare-wrapRightText1">包裹一</view>
+        <view class="fare-wrapRightText2">属性：普通货物</view>
+        <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
+        <view class="fare-wrapRightText2">计费重量：1.25KG</view>
+        <view class="fare-wrapRightText2">计费重量：实际重量</view>
+        <view class="fare-wrapRightText2">运费：￥125</view>      
+      </view>
+    </view>
+    <view class="fare-wrap">
+      <view class="fare-wrapLeft">
+        <image src="../../assets/images/称重图2.png"></image>
+      </view>
+      <view class="fare-wrapRight">
+        <view class="fare-wrapRightText1">包裹二</view>
+        <view class="fare-wrapRightText2">属性：普通货物</view>
+        <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
+        <view class="fare-wrapRightText2">计费重量：1.25KG</view>
+        <view class="fare-wrapRightText2">计费重量：实际重量</view>
+        <view class="fare-wrapRightText2">运费：￥125</view>      
+      </view>
+    </view>
+    <view class="fare-wrap">
+      <view class="fare-wrapLeft">
+        <image src="../../assets/images/称重图2.png"></image>
+      </view>
+      <view class="fare-wrapRight">
+        <view class="fare-wrapRightText1">123456789823424234</view>
+        <view class="fare-wrapRightText2">属性：普通货物</view>
+        <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
+        <view class="fare-wrapRightText2">计费重量：1.25KG</view>
+        <view class="fare-wrapRightText2">计费重量：实际重量</view>
+        <view class="fare-wrapRightText2">运费：￥125</view>      
+      </view>
+    </view>
+  </view>
+
+  <!-- 快递个数 -->
+  <view class="orderMiddle">
+    <!-- 快递个数输入 -->
+    <view class="middleText">
+      <text>*</text>
+      <text>快递个数</text>
+      <input class="input" placeholder-class="input-holder" type="text" placeholder="4" />
+    </view>
+    <!-- 备注信息 -->
+    <view class="middleBox">
+      <input type="text" placeholder-class="input-holder" placeholder="备注信息，例如：去掉包装盒等" />
+    </view>
+    <!-- 添加快递单号 -->
+    <view class="upBox">
+      <view class="upBox1">
+        <text class="upBoxText">1.</text>
+        <input type="text" class="input" placeholder="2452435334" />
+        <view class="upBoxText1" style="position: absolute; right: 100rpx;">1.28kg</view>
+        <view class="upBoxText1">已入库</view>
+      </view>
+      <view class="upBox1">
+        <text class="upBoxText">2.</text>
+        <input type="text" class="input" placeholder="1231242342" />
+        <view class="upBoxText1" style="position: absolute; right: 100rpx;">1.30kg</view>
+        <view class="upBoxText1">已入库</view>
+      </view>
+      <view class="upBox1">
+        <text class="upBoxText">3.</text>
+        <input type="text" class="input" placeholder="1213423425" />
+        <view class="upBoxText1" style="position: absolute; right: 100rpx;">1.28kg</view>
+        <view class="upBoxText1">已入库</view>
+      </view>
+      <view class="upBox1">
+        <text class="upBoxText">4.</text>
+        <input type="text" class="input" placeholder="24234315431" />
+        <view class="upBoxText1" style="position: absolute; right: 100rpx;">1.28kg</view>
+        <view class="upBoxText1">已入库</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 订单详情 -->
+  <view class="orderUnder">
+    <view class="orderUnderText">
+      <view>
+        订单号：{{text}}
+        <text class="orderText2" data-item='{{text}}' bindtap="copyNumber">复制</text>
+      </view>
+      <view>转运线路：中国 - 美国</view>
+      <view>预选渠道：普通货物</view>
+      <view>订单状态：<text style="color: #ffd929">待入仓</text></view>
+      <view>支付状态：<text style="color: #ee0606">待支付</text></view>
+      <view>下单时间：2022-05-09 14:07:12</view>
+      <view>入仓时间：2022-05-18 18:07:12</view>
+    </view>
+  </view>
+
+  <!-- 按钮 -->
+  <view class="btnUnder">
+    <view class="btn btn1">联系客服</view>
+    <view class="btn btn2" bindtap="showDialog">支付选项</view>
+
+    <!-- 支付选项弹出层 -->
+    <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
+    <view class="modal-dialog" wx:if="{{show}}">
+      <view class="modal-title">请确认您的收货地址</view>
+      <view class="modal-content">
+        <view class="modal-warehouse">
+          <view class="modal-warehouseImage">
+            <image src="../../assets/images/小房子.png"></image>
+          </view>
+          <view class="modal-warehouseText">
+            <text style="margin-right: 20rpx; font-weight: 700;">KKZheng</text>
+            <text>18688880130</text>
+            <view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A TUCSON, AZ 85705 USA</view>
+          </view>
+        </view>
+      </view>
+      <view class="modal-footer">
+        <view class="btn-cancel" bindtap="onCancel" data-status="cancel">联系客服</view>
+        <view style="color: #02BB00;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认无误</view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -38,23 +38,6 @@ Page({
     })
   },
 
-  // 补充快递单号弹出层
-  showDialogs: function () {
-    this.setData({
-      shows: true
-    })
-  },
-
-  // 补充快递单号，点击取消按钮事件，关闭弹出层
-  onCancels: function () {
-    this.hideModal();
-  },
-
-  // 补充快递单号，点击确认按钮，关闭弹出层
-  onConfirms: function () {
-    this.hideModal();
-  },
-
   // 确认打包弹出层
   showDialog: function () {
     this.setData({
@@ -65,8 +48,7 @@ Page({
   // 确认打包隐藏弹出层
   hideModal: function () {
     this.setData({
-      show: false,
-      shows: false,
+      show: false
     });
   },
 
@@ -79,7 +61,7 @@ Page({
   onConfirm: function () {
     this.hideModal();
     wx.navigateTo({
-      url: '/pages/picked/picked',
+      url: '/pages/insure/insure',
     })
   }
 })
