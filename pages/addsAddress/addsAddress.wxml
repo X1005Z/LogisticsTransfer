@@ -1,0 +1,45 @@
+<view class="addAddress">
+	<!-- <form bindsubmit="formSubmit" bindreset="formReset"> -->
+	<view class="box">
+		<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		Name : <input type="text" name="name" placeholder-class="input-holder" placeholder="Please fill in the recipient's name" bindtap="userNameInput" />
+	</view>
+	<view class="box">
+		<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
+		Phone : <input type="text" name="phone" style="width: 500rpx;" placeholder-class="input-holder" placeholder="Please fill in the recipient‘s phone" />
+	</view>
+	<view class="box">
+		<text decode="{{true}}">&nbsp;&nbsp;</text>
+		Address : <input type="text" name="" placeholder-class="input-holder" placeholder="Please fill in the recipient's name" />
+	</view>
+	<view class="box">
+		<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;City : </text>
+
+		<picker  mode="region" bindchange="getUserProvince" style="display: flex;">
+		<input type="text" placeholder-class="input-holder" placeholder="Please fill in the city" />
+		<view class="text1">
+			<text wx:for="{{region}}">{{item}} </text>
+		</view>
+	</picker>
+	</view>
+	
+	<view class="box">
+		PostCode : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the postcode" />
+	</view>
+	<view class="box">
+		<text decode="{{true}}">&nbsp;&nbsp;&nbsp;</text>
+		Country : <input type="text" placeholder-class="input-holder" placeholder="Please fill in the postcode" />
+		<image class="image" src="../../assets/images/右箭头999.png"></image>
+	</view>
+
+	<!-- 横线 -->
+	<view class="line"></view>
+
+	<view class="insureUpText2">
+		<view style="margin-left: 10rpx;">设为默认</view>
+		<switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+	</view>
+
+	<view class="btn" bindtap="btnclick">添加地址</view>
+	<!-- </form> -->
+</view>

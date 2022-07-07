@@ -119,6 +119,12 @@
   font-size: 28rpx;
 }
 
+.fremdnessTextbox-text {
+  width: 150rpx;
+  height: 46rpx;
+  text-align: right;
+}
+
 
 
 /* 立即转运按钮 */

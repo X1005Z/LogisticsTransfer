@@ -10,7 +10,6 @@
     "pages/process/process",
     "pages/myCoupon/myCoupon",
     "pages/myAddress/myAddress",
-    "pages/addAddress/addAddress",
     "pages/activeCenter/activeCenter",
     "pages/orderDetails/orderDetails",
     "pages/receiveCoupon/receiveCoupon",
@@ -23,7 +22,11 @@
     "pages/payCompleted/payCompleted",
     "pages/accomplish/accomplish",
     "pages/godown/godown",
-    "pages/mysAddress/mysAddress"
+    "pages/mysAddress/mysAddress",
+	"pages/chooseCountry/chooseCountry",
+	"pages/addsAddress/addsAddress",
+	"pages/test1/test1",
+	"pages/test2/test2"
   ],
   "window":{
     "backgroundTextStyle":"light",

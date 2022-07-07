@@ -38,8 +38,6 @@
           <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">下一步</view>
         </view>
       </view>
-
-
     </view>
   </view>
 

@@ -23,6 +23,9 @@ Page({
   // 修改地址
   address: function () {
     console.log(111);
+    wx.navigateTo({
+      url: '/pages/chooseCountry/chooseCountry',
+    })
   },
 
   // 弹出层

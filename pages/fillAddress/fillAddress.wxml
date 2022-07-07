@@ -28,30 +28,10 @@
         <view class="selectAddress">选择地址</view>
       </navigator>
     </view>
-    <view class="fremdnessText3">
-      <view class="fremdnessTextbox3">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-        Name：
-        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the recipient‘s name" />
-      </view>
-      <view class="fremdnessTextbox3">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-        Phone：
-        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the recipient‘s phone" />
-      </view>
-      <view class="fremdnessTextbox3">
-        <text decode="{{true}}">&nbsp;&nbsp;</text>
-        Address：
-        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the address" />
-      </view>
-      <view class="fremdnessTextbox3">
-        <text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>
-        City：
-        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the city" />
-      </view>
-      <view class="fremdnessTextbox3">
-        PostCode：
-        <input type="text" class="input" placeholder-class="font" placeholder="Please fill in the postcode" />
+    <view class="fremdnessText3" >
+      <view class="fremdnessTextbox3" wx:for="{{obj}}" wx:for-item="value" data-item="{{value}}">
+        <view class="fremdnessTextbox-text">{{value.name}}</view> 
+        <input type="text" class="input" placeholder-class="font" placeholder="{{value.placeholder}}" value="{{value.value}}" />
       </view>
     </view>
   </view>

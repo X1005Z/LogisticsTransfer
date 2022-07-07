@@ -1,13 +1,14 @@
-/* .addAddressBox {
+.addAddressBox {
   width: 750rpx;
   height: 254rpx;
-  background-color: bisque;
+  margin-bottom: 20rpx;
 }
 
 .addAddressUp {
+  display: flex;
+  align-items: center;
   width: 750rpx;
   height: 164rpx;
-  background-color: black;
   margin-bottom: 2rpx;
 }
 
@@ -19,4 +20,81 @@
   background-color: #FFA726;
   color: #fff;
   text-align: center;
-} */
+  margin-left: 18rpx;
+}
+
+.addAddressUpRight {
+  width: 566rpx;
+  height: 164rpx;
+  margin-left: 20rpx;
+}
+
+.addAddressUpRight view:nth-child(1) {
+  font-size: 30rpx;
+  margin-top: 20rpx;
+}
+
+.addAddressUpRight view:nth-child(2) {
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 12rpx;
+  line-height: 40rpx;
+}
+
+.addAddressUnder {
+  height: 88rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 20rpx;
+}
+
+.addAddressUnder1 {
+  color: #E7691D;
+  font-size: 28rpx;
+}
+
+.addAddressUnder2 image {
+  width: 40rpx;
+  height: 40rpx;
+  margin-left: 20rpx;
+}
+
+/* checkbox设置成圆形 */
+.checkbox .wx-checkbox-input {
+  border-radius: 50%;
+  width: 24rpx;
+  height: 24rpx;
+}
+
+/* 选中的背景颜色 */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: 1px solid #e7691d;
+}
+
+/* 打钩的样式 */
+.checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 40rpx;
+  /* 选中后对勾大小 */
+  height: 40rpx;
+  /* 选中后对勾大小 */
+  font-size: 32rpx;
+  line-height: 40rpx;
+  text-align: center;
+  color: #e7691d;
+  /* 对勾颜色 白色 */
+}
+
+.btn  {
+  position: fixed;
+  bottom: 34rpx;
+  left: 20rpx;
+  width: 710rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fff;
+  font-size: 28rpx;
+  background-color: #e7691d;
+  border-radius: 40rpx;
+  text-align: center;
+}

@@ -5,7 +5,7 @@
   </view>
 
   <!-- 添加地址按钮 -->
-  <navigator open-type="navigate" url="/pages/addAddress/addAddress">
+  <navigator open-type="navigate" url="/pages/addsAddress/addsAddress">
     <view class="btn">添加地址</view>
   </navigator>
 </view>
