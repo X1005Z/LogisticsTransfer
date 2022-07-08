@@ -42,9 +42,9 @@
     <view class="fare-text">打包备注：<text style="color: #e76932;">东西太多，已统一打包加固</text></view>
     <view class="fare-text" style="margin-bottom: 10rpx;">称重图片：</view>
     <view class="fare-text fare-image">
-      <image src="../../assets/images/称重图.png"></image>
-      <image src="../../assets/images/称重图.png"></image>
-      <image style="margin-right: 0rpx;" src="../../assets/images/称重图.png"></image>
+      <view wx:for="{{imgArr}}">
+        <image src="{{item}}" data-src="{{item}}" bindtap="previewImg"></image>
+      </view>
     </view>
     <view class="fare-text" style="margin-bottom: 10rpx;">账单：</view>
     <view class="fare-wrap">
@@ -57,7 +57,7 @@
         <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
         <view class="fare-wrapRightText2">计费重量：1.25KG</view>
         <view class="fare-wrapRightText2">计费重量：实际重量</view>
-        <view class="fare-wrapRightText2">运费：￥125</view>      
+        <view class="fare-wrapRightText2">运费：￥125</view>
       </view>
     </view>
     <view class="fare-wrap">
@@ -70,7 +70,7 @@
         <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
         <view class="fare-wrapRightText2">计费重量：1.25KG</view>
         <view class="fare-wrapRightText2">计费重量：实际重量</view>
-        <view class="fare-wrapRightText2">运费：￥125</view>      
+        <view class="fare-wrapRightText2">运费：￥125</view>
       </view>
     </view>
     <view class="fare-wrap">
@@ -83,7 +83,7 @@
         <view class="fare-wrapRightText2">长宽高：12*5*5 CM</view>
         <view class="fare-wrapRightText2">计费重量：1.25KG</view>
         <view class="fare-wrapRightText2">计费重量：实际重量</view>
-        <view class="fare-wrapRightText2">运费：￥125</view>      
+        <view class="fare-wrapRightText2">运费：￥125</view>
       </view>
     </view>
   </view>
@@ -94,11 +94,11 @@
     <view class="middleText">
       <text>*</text>
       <text>快递个数</text>
-      <input class="input" placeholder-class="input-holder" type="text" placeholder="4" />
+      <input class="input" placeholder-class="input-holder" type="text" disabled="true" placeholder="4" />
     </view>
     <!-- 备注信息 -->
     <view class="middleBox">
-      <input type="text" placeholder-class="input-holder" placeholder="备注信息，例如：去掉包装盒等" />
+      <input type="text" placeholder-class="input-holder" placeholder="备注信息，例如：去掉包装盒等" disabled="true" />
     </view>
     <!-- 添加快递单号 -->
     <view class="upBox">
@@ -147,7 +147,9 @@
 
   <!-- 按钮 -->
   <view class="btnUnder">
-    <view class="btn btn1">联系客服</view>
+    <navigator url="/pages/customService/customService">
+      <view class="btn btn1">联系客服</view>
+    </navigator>
     <view class="btn btn2" bindtap="showDialog">支付选项</view>
 
     <!-- 支付选项弹出层 -->

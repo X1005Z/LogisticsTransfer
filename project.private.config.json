@@ -398,6 +398,97 @@
           "query": "",
           "launchMode": "default",
           "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/mysAddress/mysAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/allPackages/allPackages",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderDetails/orderDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/fillAddress/fillAddress",
+          "query": "address=%7B%22mes%22%3A%22%E6%88%91%22%2C%22name%22%3A%22KK%22%2C%22phone%22%3A%2218688880130%22%2C%22address%22%3A%22Elizabeth%20Street%2C%20Melbourne%2C%20Australia%22%2C%22city%22%3A%22Melbourne%22%2C%22postcode%22%3A%22203244%22%7D",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/OrderInformation/OrderInformation",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/customService/customService",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/aboutUs/aboutUs",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/chooseCountrys/chooseCountrys",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/addsAddress/addsAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/toPay/toPay",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/orderDetails/orderDetails",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/fillAddress/fillAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/insure/insure",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

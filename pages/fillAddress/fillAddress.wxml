@@ -37,7 +37,7 @@
   </view>
 
   <!-- 立即转运按钮 -->
-  <navigator open-type="navigate" url="/pages/traInstructions/traInstructions">
-    <view class="btn">立即转运</view>
-  </navigator>
+  <!-- <navigator open-type="navigate" url="/pages/traInstructions/traInstructions"> -->
+    <view class="btn" bindtap="btn">立即转运</view>
+  <!-- </navigator> -->
 </view>

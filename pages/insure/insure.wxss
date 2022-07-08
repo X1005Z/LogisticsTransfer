@@ -124,6 +124,7 @@
   width: 376rpx;
   height: 114rpx;
   line-height: 114rpx;
+  margin-top: 123rpx;
   text-align: center;
   font-size: 36rpx;
 }

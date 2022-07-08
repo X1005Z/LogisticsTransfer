@@ -51,7 +51,6 @@ Page({
     })
   },
 
-  // 把值赋值到
   onShow() {
     if (this.options?.address) {
       let address = JSON.parse(this.options.address);
@@ -63,6 +62,15 @@ Page({
         console.log(address[item.text]);
       })
       console.log(obj, '111');
+      this.setData({
+        obj
+      })
     }
+  },
+
+  btn() {
+    wx.navigateTo({
+      url: '/pages/traInstructions/traInstructions',
+    })
   }
 })

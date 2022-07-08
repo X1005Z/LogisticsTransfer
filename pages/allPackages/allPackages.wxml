@@ -1,0 +1,57 @@
+<view class="allPackages">
+  <!-- 上半部分 -->
+  <view class="allPackagesUp">
+    <view class="allPackagesUpBox">
+      <view style="font-size: 34rpx;">全部包裹</view>
+      <view>查看您的全部包裹</view>
+    </view>
+    <view class="allPackagesUpBox">
+      <view style="font-size: 34rpx;">退回包裹</view>
+      <view>退回给商家或仓库处理</view>
+    </view>
+    <view class="allPackagesUpBox">
+      <view style="font-size: 34rpx;">异常包裹</view>
+      <view>违禁品</view>
+    </view>
+    <view class="allPackagesUpBox">
+      <view style="font-size: 34rpx;">入库包裹</view>
+      <view>已入库的包裹</view>
+    </view>
+  </view>
+
+  <!-- 下半部分 -->
+  <view class="allPackagesUnder">
+    <!-- <view class="allPackagesUnderText1">
+      <view>1</view>
+      <view>待处理</view>
+      <view>3</view>
+    </view> -->
+
+    <view class="flow">
+      <view class="contantBox">
+        <!-- 通过数组长度判断显示内容 >0显示物流信息-->
+        <view wx:if="{{dataList.length > 0}}">
+          <view class="itemBox" wx:for="{{dataList}}" wx:key="index">
+            <!-- 左边线条 -->
+            <view class="itemLeftBox">
+              <view class="lineBox">
+                <view class="topLineBox {{index == 0 ? '' : 'longLineBox'}}"></view>
+                <view class="bomLineBox {{index + 1 == dataList.length ? '' : 'longLineBox'}}"></view>
+              </view>
+              <image class="newestIconBox" src="https://s1.ax1x.com/2022/03/29/qySZi4.png" wx:if="{{index == 2}}"></image>
+              <view class="dotBox" wx:else="{{index > 0}}"></view>
+            </view>
+            <!-- 右边内容 -->
+            <view class="rightBigBox {{index == 2 ? '' : 'oldTxtBox'}} {{index + 1 == dataList.length ? '' : 'borderBomBox'}}">
+              <view>{{item.content}}</view>
+              <view class="timeBox">{{item.time}}</view>
+            </view>
+          </view>
+        </view>
+        <view class="notBox" wx:else>暂无物流信息</view>
+      </view>
+
+    </view>
+
+  </view>
+</view>

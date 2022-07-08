@@ -1,131 +1,131 @@
 <view class="orderDetail">
-	<!-- 收货信息 -->
-	<view class="orderUp">
-		<!-- 仓库信息 -->
-		<view class="warehouse">
-			<view class="warehouseImage warehouseImage1">
-				<image src="../../assets/images/小灯泡.png"></image>
-			</view>
-			<view class="warehouseText">
-				<view class="warehouseText1">
-					<text style="margin-right: 20rpx;">{{name}}</text>
-					<text>{{phone}}</text>
-					<text class="orderText2" data-item='{{name}},{{phone}},{{address}}' bindtap="copy">复制</text>
-					<view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">{{address}}</view>
-				</view>
-			</view>
-		</view>
-		<!-- 收货人信息 -->
-		<view class="warehouse">
-			<view class="warehouseImage warehouseImage2">
-				<image src="../../assets/images/小房子.png"></image>
-			</view>
-			<view class="warehouseText">
-				<view class="warehouseText1">
-					<text style="margin-right: 20rpx;">KK Zheng</text>
-					<text>18688880130</text>
-					<view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A TUCSON, AZ 85705 USA</view>
-				</view>
-			</view>
-		</view>
-	</view>
+  <!-- 收货信息 -->
+  <view class="orderUp">
+    <!-- 仓库信息 -->
+    <view class="warehouse">
+      <view class="warehouseImage warehouseImage1">
+        <image src="../../assets/images/小灯泡.png"></image>
+      </view>
+      <view class="warehouseText">
+        <view class="warehouseText1">
+          <text style="margin-right: 20rpx;">{{name}}</text>
+          <text>{{phone}}</text>
+          <text class="orderText2" data-item='{{name}},{{phone}},{{address}}' bindtap="copy">复制</text>
+          <view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">{{address}}</view>
+        </view>
+      </view>
+    </view>
+    <!-- 收货人信息 -->
+    <view class="warehouse">
+      <view class="warehouseImage warehouseImage2">
+        <image src="../../assets/images/小房子.png"></image>
+      </view>
+      <view class="warehouseText">
+        <view class="warehouseText1">
+          <text style="margin-right: 20rpx;">KK Zheng</text>
+          <text>18688880130</text>
+          <view style="color: #999999; font-size: 24rpx; margin-top: 10rpx;">MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A TUCSON, AZ 85705 USA</view>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>
 
 <!-- 快递个数 -->
 <view class="orderMiddle">
-	<view class="middleImage">
-		<image class="images" src="../../assets/images/红色感叹号.png"></image>
-		<text class="texts">快递全部到齐点击确认打包后，订单不可修改</text>
-	</view>
-	<view class="middleText">
-		<text>*</text>
-		<text>快递个数</text>
-		<input class="input" placeholder-class="input-holder" type="number" v-model="val" bindblur="onBlur" disabled="{{disableds}}" placeholder="请输入快递个数" />
-	</view>
-	<view class="middleBox">
-		<textarea type="text" placeholder-class="input-holder" placeholder="备注信息，例如：去掉包装盒等" bindblur="onBlurs" disabled="{{disabledsText}}" name="textarea" />
-	</view>
+  <view class="middleImage">
+    <image class="images" src="../../assets/images/红色感叹号.png"></image>
+    <text class="texts">快递全部到齐点击确认打包后，订单不可修改</text>
+  </view>
+  <view class="middleText">
+    <text>*</text>
+    <text>快递个数</text>
+    <input class="input" placeholder-class="input-holder" bindblur="onBlur" disabled="{{disableds}}" placeholder="请输入快递个数" />
+  </view>
+  <view class="middleBox">
+    <textarea type="text" placeholder-class="input-holder" placeholder="备注信息，例如：去掉包装盒等" bindblur="onBlurs" disabled="{{disabledsText}}" name="textarea" />
+  </view>
 
-	<block wx:for="{{fastmailList}}" wx:key="index">
-		<!-- 填写订单信息 -->
-		<view class="upBox">
-			<view class="upBox1">
-				<text class="upBoxText">{{index + 1}}.</text>
-				<view class="input">
-					<input placeholder="请输入快递单号" v-model="vals" bindblur="onBlurOrder" type="number" disabled="{{disabledOrder}}" data-index="{{index}}" />
+  <block wx:for="{{fastmailList}}" wx:key="index">
+    <!-- 填写订单信息 -->
+    <view class="upBox">
+      <view class="upBox1">
+        <text class="upBoxText">{{index + 1}}.</text>
+        <view class="input">
+          <input placeholder="请输入快递单号" bindblur="onBlurOrder" disabled="{{disabledOrder}}" data-index="{{index}}" />
 
-					<!-- 订单号失去焦点之后弹窗 -->
-					<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showorder}}"></view>
-					<view class="modal-dialog" wx:if="{{showorder}}">
-						<view class="modal-title">请确认快递单号是否无误</view>
-						<view class="modal-content">
-							请确认快递单号是否无误，一旦提交，不可修改。
-						</view>
-						<view class="modal-footer">
-							<view class="btn-cancel" bindtap="onCancelOrder" data-status="cancel">取消</view>
-							<view style="color: #02BB00;" class="btn-confirm" bindtap="onConfirmOrder" data-status="confirm">确认</view>
-						</view>
-					</view>
+          <!-- 订单号失去焦点之后弹窗 -->
+          <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showorder}}"></view>
+          <view class="modal-dialog" wx:if="{{showorder}}">
+            <view class="modal-title">请确认快递单号是否无误</view>
+            <view class="modal-content">
+              请确认快递单号是否无误，一旦提交，不可修改。
+            </view>
+            <view class="modal-footer">
+              <view class="btn-cancel" bindtap="onCancelOrder" data-status="cancel">取消</view>
+              <view style="color: #02BB00;" class="btn-confirm" bindtap="onConfirmOrder" data-status="confirm">确认</view>
+            </view>
+          </view>
 
-					<view class="del" bindtap='del' data-index='{{index}}'>
-						<image class="img3" src="../../assets/images/删除图标.png"></image>
-					</view>
-				</view>
-			</view>
-		</view>
-	</block>
-	<block wx:if="{{showBtn}}">
-		<!-- 补充快递单号 -->
-		<view>
-			<view class="addbtn" bindtap="showDialogs">+ 补充快递单号</view>
-			<!-- 补充快递单号弹出层 -->
-			<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{shows}}"></view>
-			<view class="modal-dialog" wx:if="{{shows}}">
-				<view class="modal-title">是否增加快递单号？</view>
-				<view class="modal-content">
-					增加快递单号后，发往转运中心的快递个数+1，是否要继续？
-				</view>
-				<view class="modal-footer">
-					<view class="btn-cancel" bindtap="onCancels" data-status="cancel">取消</view>
-					<view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirms" data-status="confirm">确认</view>
-				</view>
-			</view>
-		</view>
-	</block>
+          <view class="del" bindtap='del' data-index='{{index}}'>
+            <image class="img3" src="../../assets/images/删除图标.png"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </block>
 
-
+  <block wx:if="{{showBtn}}">
+    <!-- 补充快递单号 -->
+    <view>
+      <view class="addbtn" bindtap="showDialogs">+ 补充快递单号</view>
+      <!-- 补充快递单号弹出层 -->
+      <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{shows}}"></view>
+      <view class="modal-dialog" wx:if="{{shows}}">
+        <view class="modal-title">是否增加快递单号？</view>
+        <view class="modal-content">
+          增加快递单号后，发往转运中心的快递个数+1，是否要继续？
+        </view>
+        <view class="modal-footer">
+          <view class="btn-cancel" bindtap="onCancels" data-status="cancel">取消</view>
+          <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirms" data-status="confirm">确认</view>
+        </view>
+      </view>
+    </view>
+  </block>
 </view>
-
 
 <!-- 订单详情 -->
 <view class="orderUnder">
-	<view class="orderUnderText">
-		<view>
-			订单号：{{text}}
-			<text class="orderText2" data-item='{{text}}' bindtap="copyNumber">复制</text>
-		</view>
-		<view>转运线路：中国 - 美国</view>
-		<view>预选渠道：普通货物</view>
-		<view>订单状态：<text style="color: #dd716b">待填写</text></view>
-		<view>下单时间：2022-05-09 14:07:12</view>
-	</view>
+  <view class="orderUnderText">
+    <view>
+      订单号：{{text}}
+      <text class="orderText2" data-item='{{text}}' bindtap="copyNumber">复制</text>
+    </view>
+    <view>转运线路：中国 - 美国</view>
+    <view>预选渠道：普通货物</view>
+    <view>订单状态：<text style="color: #dd716b">待填写</text></view>
+    <view>下单时间：2022-05-09 14:07:12</view>
+  </view>
 </view>
 
 <!-- 按钮 -->
 <view class="btnUnder">
-	<view class="btn btn1">联系客服</view>
-	<view class="btn btn2" bindtap="showDialog">取消订单</view>
+  <navigator url="/pages/customService/customService">
+    <view class="btn btn1">联系客服</view>
+  </navigator>
+  <view class="btn btn2" bindtap="showDialog">取消订单</view>
 
-	<!-- 取消订单弹出层 -->
-	<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
-	<view class="modal-dialog" wx:if="{{show}}">
-		<view class="modal-title">是否取消订单</view>
-		<view class="modal-content">
-			取消订单后，订单将不能进行后续操作是否要继续？
-		</view>
-		<view class="modal-footer">
-			<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
-			<view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认</view>
-		</view>
-	</view>
+  <!-- 取消订单弹出层 -->
+  <view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{show}}"></view>
+  <view class="modal-dialog" wx:if="{{show}}">
+    <view class="modal-title">是否取消订单</view>
+    <view class="modal-content">
+      取消订单后，订单将不能进行后续操作是否要继续？
+    </view>
+    <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view style="color: #02bf7b;" class="btn-confirm" bindtap="onConfirm" data-status="confirm">确认</view>
+    </view>
+  </view>
 </view>

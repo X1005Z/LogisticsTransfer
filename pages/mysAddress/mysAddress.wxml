@@ -1,11 +1,12 @@
 <view class="addAddress">
-  <view class="addAddressBox">
+<!--  -->
+  <view class="addAddressBox" wx:for="{{obj}}" bindtap="onclick" wx:for-item="value" data-item="{{value}}">
     <view class="addAddressUp">
-      <view class="addAddressUpLeft">我</view>
+      <view class="addAddressUpLeft">{{value.mes}}</view>
       <view class="addAddressUpRight">
-        <view>KK<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>18688880130</view>
-        <view>MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A
-          TUCSON, AZ 85705 USA</view>
+        <view>{{value.name}}<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>{{value.phone}}</view>
+        <view class="views">{{value.address}}</view>
+        <view class="views">{{value.city}}</view>
       </view>
     </view>
     <view class="addAddressUnder">
@@ -18,28 +19,6 @@
         <image src="../../assets/images/删除图标.png"></image>
       </view>
     </view>
-  </view>
-
-  <view class="addAddressBox">
-    <view class="addAddressUp">
-      <view class="addAddressUpLeft" style="background-color: #1296DB;">赵</view>
-      <view class="addAddressUpRight">
-        <view>赵本山<text decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>18688880130</view>
-        <view>MEGASYSTEMS INC 799 E DRAGRAM SUITE 5A
-          TUCSON, AZ 85705 USA</view>
-      </view>
-    </view>
-    <view class="addAddressUnder">
-      <view class="addAddressUnder1">
-        <checkbox class="checkbox" checked="{{checked}}" />
-        <text style="margin-left: 10rpx;">设为默认寄件地址</text>
-      </view>
-      <view class="addAddressUnder2">
-        <image src="../../assets/images/编辑图标.png"></image>
-        <image src="../../assets/images/删除图标.png"></image>
-      </view>
-    </view>
-
   </view>
 
   <navigator open-type="navigate" url="/pages/addsAddress/addsAddress">

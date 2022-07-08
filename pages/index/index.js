@@ -18,13 +18,15 @@ Page({
       }
     ],
     idx: 0,
+
+    // 默认是美国
+    country: "美国"
   },
 
   // 修改地址
   address: function () {
-    console.log(111);
     wx.navigateTo({
-      url: '/pages/chooseCountry/chooseCountry',
+      url: '/pages/chooseCountrys/chooseCountrys',
     })
   },
 
@@ -65,4 +67,12 @@ Page({
     })
   },
 
+  onShow() {
+    // 从选择地址那边带过来的参数
+    if(this.options?.country) {
+      this.setData({
+        country: this.options.country
+      })
+    }
+  }
 })

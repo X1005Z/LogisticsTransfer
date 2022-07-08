@@ -5,7 +5,12 @@ Page({
     address: "深圳市龙华区龙华街道工业路壹城环智中心C座2607室",
     text: "20220509140712345678",
     show: false,
-    shows: false
+    shows: false,
+    imgArr: [
+      '../../assets/images/称重图.png',
+      '../../assets/images/称重图.png',
+      '../../assets/images/称重图.png'
+    ]
   },
 
   // 复制地址
@@ -62,6 +67,15 @@ Page({
     this.hideModal();
     wx.navigateTo({
       url: '/pages/insure/insure',
+    })
+  },
+
+  // 图片放大
+  previewImg: function(e) {
+    let that = this;
+    wx.previewImage({
+      current: e.currentTarget.dataset.src,
+      urls: that.data.imgArr,
     })
   }
 })

@@ -6,7 +6,7 @@
       <image src="../../assets/images/保价图标.png"></image>
       <view class="insureUpImageText1">保价</view>
     </view>
-    <input class="insureInput" type="text" placeholder="自定义物品价格，请填写真实物品价格" />
+    <input class="insureInput" type="text" bindblur="onBlur"  placeholder="自定义物品价格，请填写真实物品价格" />
   </view>
 
   <!-- 丢失险 -->
@@ -20,10 +20,10 @@
     </view>
     <view class="insureUpText2">
       <view style="margin-left: 10rpx;">丢失险（保价的3%）</view>
-      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{checked1}}" bindtap="switch1" />
     </view>
     <view class="line"></view>
-    <view style="margin-left: 10rpx;">保险费：￥30.00</view>
+    <view style="margin-left: 10rpx;">保险费：￥{{money}}</view>
   </view>
 
   <!-- 关税险 -->
@@ -38,10 +38,10 @@
     </view>
     <view class="insureUpText2">
       <view style="margin-left: 10rpx;">关税险（保价的2%）</view>
-      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{switch1Checked}}" />
+      <switch class="wx-switch-input" color="rgb(0, 226, 102)" checked="{{checked2}}" bindtap="switch2" />
     </view>
     <view class="line"></view>
-    <view style="margin-left: 10rpx;">保险费：￥20.00</view>
+    <view style="margin-left: 10rpx;">保险费：￥{{moneys}}</view>
   </view>
 
   <!-- 按钮 -->

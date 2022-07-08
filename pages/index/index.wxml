@@ -21,7 +21,7 @@
       <view class="text">
         <text class="cityName">中国</text>
         <image mode="widthFix" src="../../assets/images/小飞机.png"></image>
-        <text class="cityName" bindtap="address">美国</text>
+        <text class="cityNames" style="text-align: left;" bindtap="address">{{country}}</text>
       </view>
       <button bindtap="showDialog">立即转运</button>
       <!-- 弹出层 -->

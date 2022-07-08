@@ -1,0 +1,23 @@
+<view class="search">
+  <view class="searchUp">
+    <image src="../../assets/images/搜索小图标.png"></image>
+    <input type="text" placeholder="选择国家或地区"/>
+  </view>
+  <view class="line"></view>
+</view>
+
+<van-index-bar>
+  <!-- 选择地址 -->
+  <view wx:for="{{obj}}" wx:for-item="value">
+    <van-index-anchor index="{{index}}"></van-index-anchor>
+    <view wx:for="{{value}}" wx:key="item">
+      <view class="country" wx:for="{{value}}" data-item="{{key}}" bindtap="clickCountry" wx:for-item="key">
+        <view class="America">
+          <view>{{key.name}}</view>
+          <view>{{key.country}}</view>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </view>
+</van-index-bar>

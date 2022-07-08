@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog"
+    "mp-dialog": "/miniprogram_npm/weui-miniprogram/dialog/dialog",
+    "van-dialog": "@vant/weapp/dialog/index"
   }
 }

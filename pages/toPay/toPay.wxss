@@ -89,6 +89,8 @@
 }
 
 .fare-image {
+  display: flex;
+  justify-content: space-between;
   width: 590rpx;
   height: 164rpx;
 }

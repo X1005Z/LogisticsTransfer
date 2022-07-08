@@ -1,0 +1,62 @@
+.search {
+  width: 752rpx;
+  height: 122rpx;
+  padding-top: 34rpx;
+  padding-left: 56rpx;
+  box-sizing: border-box;
+}
+
+.search .searchUp {
+  display: flex;
+}
+
+.search image {
+  width: 48rpx;
+  height: 48rpx;
+  margin-right: 16rpx;
+  margin-bottom: 18rpx;
+}
+
+.search .line {
+  width: 670rpx;
+  height: 2rpx;
+  border-top: 2rpx solid #F759AB;
+}
+
+.van-index-bar__sidebar {
+  position: absolute;
+  top: 144rpx;
+  right: 10rpx;
+  color: #F759AB;
+  width: 26rpx;
+  height: 1232rpx;
+  text-align: center;
+  font-size: 26rpx;
+  line-height: 44rpx;
+}
+
+.van-index-anchor-wrapper .van-index-anchor {
+  background-color: #f5f5f5;
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+}
+
+.country .America {
+  display: flex;
+  justify-content: space-between;
+  width: 750rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  padding-right: 40rpx;
+  font-size: 28rpx;
+  box-sizing: border-box;
+}
+
+.line {
+  width: 670rpx;
+  height: 2rpx;
+  border-top: 2rpx solid #E9E9E9;
+
+}

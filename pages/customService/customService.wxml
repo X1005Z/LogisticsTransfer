@@ -1,0 +1,19 @@
+<view style="height: 1449rpx; background-color: #f4f7fd;">
+  <view>
+    <image style="width: 750rpx; height: 300rpx;" src="../../assets/images/联系客服.jpg"></image>
+  </view>
+
+  <view class="custom">
+    <view class="customUp">
+      <view>常见问题</view>
+      <image src="../../assets/images/右箭头999.png"></image>
+    </view>
+    <view class="customUp">
+      <view>客服电话</view>
+      <view bindtap="call"><image src="../../assets/images/拨打电话.png"></image></view>
+    </view>
+  </view>
+
+  <view class="btn" bindtap="btn">在线咨询</view>
+
+</view>

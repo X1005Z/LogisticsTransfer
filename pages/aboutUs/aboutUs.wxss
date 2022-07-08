@@ -1,0 +1,24 @@
+.about {
+  width: 750rpx;
+  height: 400rpx;
+  background-color: #fff;
+  margin-top: 20rpx;
+}
+
+.aboutUp {
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx 20rpx;
+  border-bottom: 2rpx solid #f6f6f6;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+.aboutUp view:nth-child(2) {
+  color: #a8a7ab;
+}
+
+.aboutUp image {
+  width: 40rpx;
+  height: 40rpx;
+}

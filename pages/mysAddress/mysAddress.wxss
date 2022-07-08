@@ -34,7 +34,7 @@
   margin-top: 20rpx;
 }
 
-.addAddressUpRight view:nth-child(2) {
+.addAddressUpRight .views {
   font-size: 24rpx;
   color: #999999;
   margin-top: 12rpx;

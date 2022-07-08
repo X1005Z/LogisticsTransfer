@@ -1,0 +1,36 @@
+.custom {
+  width: 700rpx;
+  height: 240rpx;
+  background-color: #fff;
+  border-radius: 20rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+
+.customUp {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
+  box-sizing: border-box;
+}
+
+.customUp image {
+  width: 40rpx;
+  height: 40rpx;
+}
+
+.btn {
+  width: 500rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 60rpx;
+  margin: 0 auto;
+  margin-top: 200rpx;
+  background-color: #0084fd;
+}
+

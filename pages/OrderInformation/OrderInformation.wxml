@@ -25,7 +25,9 @@
       <navigator open-type="navigate" url="/pages/confirmPackage/confirmPackage">
         <button class="buttons1">确认打包</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
   <!-- 待填写 -->
@@ -44,7 +46,9 @@
       <navigator open-type="navigate" url="/pages/orderDetails/orderDetails">
         <button class="buttons1">去填写</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
   <!-- 待支付 -->
@@ -63,7 +67,9 @@
       <navigator open-type="navigate" url="/pages/toPay/toPay">
         <button class="buttons1">去支付</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
   <!-- 已出仓 -->
@@ -82,7 +88,9 @@
       <navigator open-type="navigate" url="/pages/godown/godown">
         <button class="buttons1">物流详情</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
   <!-- 已完成 -->
@@ -122,7 +130,9 @@
       <navigator open-type="navigate" url="/pages/toPay/toPay">
         <button class="buttons1">去支付</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
 </block>
@@ -141,10 +151,12 @@
     </view>
     <view class="texts">已出仓</view>
     <view class="buttons">
-      <navigator open-type="navigate" url="/pages/godown/godown">
+      <navigator open-type="navigate" url="/pages/allPackages/allPackages">
         <button class="buttons1">物流详情</button>
       </navigator>
-      <button class="buttons2">详情</button>
+      <navigator url="/pages/orderDetails/orderDetails">
+        <button class="buttons2">详情</button>
+      </navigator>
     </view>
   </view>
 </block>

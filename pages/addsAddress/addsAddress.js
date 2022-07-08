@@ -1,72 +1,98 @@
-// pages/addsAddress/addsAddress.js
 Page({
-
-	/**
-	 * 页面的初始数据
-	 */
-	data: {
-		region: []
+  data: {
+    // region: [],
+    switch1Checked: true
 	},
 
-	getUserProvince: function (e) {
-		this.setData({
-			region: e.detail.value, // 用户选择的省市区赋值给region
-		})
-	},
+  // // 省市区联动
+	// getUserProvince: function (e) {
+	// 	this.setData({
+	// 		region: e.detail.value, // 用户选择的省市区赋值给region
+	// 	})
+  // },
 
-	/**
-	 * 生命周期函数--监听页面加载
-	 */
-	onLoad(options) {
+  
+  // 判断输入的值是否是英文
+  userNameInput: function(e) {
+    let nameReg = /^[A-Za-z]{2,20}$/;
+    let value = e.detail.value;
 
-	},
+    if(!nameReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入英文',
+        icon: "error"
+      })
+      return;
+    }
+  },
 
-	/**
-	 * 生命周期函数--监听页面初次渲染完成
-	 */
-	onReady() {
+  // 判断手机号正则
+  userPhoneInput: function(e) {
+    let phoneReg = /^1[3-9]\d{9}$/;
+    let value = e.detail.value;
 
-	},
+    if(!phoneReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入数字',
+        icon: "error"
+      })
+      return;
+    }
+  },
 
-	/**
-	 * 生命周期函数--监听页面显示
-	 */
-	onShow() {
+  // 判断address正则
+  userAddressInput: function(e) {
+    let addressReg = /^[A-Za-z]$/;
+    let value = e.detail.value;
 
-	},
+    if(!addressReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入英文',
+        icon: "error"
+      })
+      return;
+    }
+  },
 
-	/**
-	 * 生命周期函数--监听页面隐藏
-	 */
-	onHide() {
+  // 判断city正则
+  userCityInput: function(e) {
+    let cityReg = /^[A-Za-z]$/;
+    let value = e.detail.value;
 
-	},
+    if(!cityReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入英文',
+        icon: "error"
+      })
+      return;
+    }
+  },
 
-	/**
-	 * 生命周期函数--监听页面卸载
-	 */
-	onUnload() {
+  // 判断postcode正则
+  userPostcodeInput: function(e) {
+    let postcodeReg = /^[1-9][0-9]{5}$/gi;
+    let value = e.detail.value;
 
-	},
+    if(!postcodeReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入数字',
+        icon: "error"
+      })
+      return;
+    }
+  },
 
-	/**
-	 * 页面相关事件处理函数--监听用户下拉动作
-	 */
-	onPullDownRefresh() {
+  // 判断country正则
+  userCountryInput: function(e) {
+    let countryReg = /^[A-Za-z]$/;
+    let value = e.detail.value;
 
-	},
-
-	/**
-	 * 页面上拉触底事件的处理函数
-	 */
-	onReachBottom() {
-
-	},
-
-	/**
-	 * 用户点击右上角分享
-	 */
-	onShareAppMessage() {
-
-	}
+    if(!countryReg.test(value) && value !== "") {
+      wx.showToast({
+        title: '请输入英文',
+        icon: "error"
+      })
+      return;
+    }
+  },
 })

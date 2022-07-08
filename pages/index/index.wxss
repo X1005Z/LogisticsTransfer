@@ -60,7 +60,7 @@ swiper image {
     position: absolute;
     top: 122rpx;
     left: 90rpx;
-    width: 448rpx;
+    width: 500rpx;
     height: 80rpx;
 }
 
@@ -71,12 +71,19 @@ swiper image {
     color: #101010;
 }
 
+.cityNames {
+  width: 190rpx;
+  height: 80rpx;
+  font-size: 56rpx;
+  color: #101010;
+}
+
 .transport .text image {
     width: 92rpx;
     height: 92rpx;
     position: absolute;
     bottom: -6rpx;
-    left: 180rpx;
+    left: 170rpx;
 }
 
 .transport button {
